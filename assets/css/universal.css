@@ -1,6 +1,4 @@
-/*#############################
-###### Custom Fonts ######
-#############################*/
+/*#################  Custom Fonts # ##################*/
 @font-face {
    font-family: 'Gotham-Book';
    src: url('../fonts/gotham/Gotham-Book.otf') format('woff2');
@@ -111,15 +109,11 @@
    font-family: 'Montserrat-ExtraBold';
 }
 
-/*#############################
-###### Custom Fonts ######
-#############################*/
+/*#################  Custom Fonts # ##################*/
 
 
 
-/*###############################
-###### Home Banner Button  ######
-###############################*/
+/*########## Home - Button One  ##########*/
 .buttonStyle-One a.primary-btn {
    border: 3px solid #6d2732;
    border-radius: 100px;
@@ -151,13 +145,29 @@
       padding: 15px 84px;
    }
 }
-/*###############################
-###### Home Banner Button  ######
-###############################*/
+/*########## Home - Button One  ##########*/
 
-/*###############################
-###### After: Image  ######
-###############################*/
+
+/*########## Home - Button Two  ##########*/
+.buttonStyle-Two a.primary-btn {
+   border: 2.5px solid #F1E8E0;
+   border-radius: 100px;
+   color: #F1E8E0
+}
+ 
+.buttonStyle-Two .group:hover {
+   background-color: #6d2732;
+   color: #F1E8E0
+}
+
+.buttonStyle-Two .group:hover a.primary-btn {
+   color: #F1E8E0
+}
+ 
+/*########## Home - Button Two  ##########*/
+
+
+/*########## After: Image ##########*/
 .add-dot-after:after {
    position: absolute;
    content: '';
@@ -182,42 +192,32 @@
    background-image: url('../images/home/tms-white-logo.webp');
    background-size: cover;
    background-repeat: no-repeat; 
-   background-size: 60em;
+   background-size: 60%;
    background-repeat: no-repeat;
    background-position: left bottom;
    z-index: +2;
 }
 
-/*###############################
-###### After: Image   ######
-###############################*/
+/*########## After: Image ##########*/
 
+ 
 
-
-
-/*#############################
-###### Custom Colors ######
-#############################*/
-.bg-blue-700 {
-   background-color: var(--color-primary) !important;
+/*########## Custom Colors ##########*/
+ 
+.text-white-10 {
+   color: #D1C7BC;
 }
-
-.text-blue-700 {
-   color: var(--color-primary) !important;
+.text-white-20 {
+   color: #F1E8E0;
 }
-
 .border-blue-700 {
    border-color: var(--color-primary) !important;
 }
 
-/*#############################
-###### Custom Colors ######
-#############################*/
+/*########## Custom Colors ##########*/
 
-
-/*#############################
-###### Custom Tailwind css ######
-#############################*/
+/*########## Custom Tailwind css ##########*/
+ 
 /* ════════════════════════════════════════════════
    FONT SIZE — up to 100px max
    Base + sm + md + lg + xl + 2xl breakpoints
