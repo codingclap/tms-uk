@@ -106,7 +106,8 @@
 
 @media (max-width:767px) {
   .scroll-box { 
-    height: 80vh; 
+    height: 80vh;
+     overflow: hidden; 
   }
 }
 @media (max-width:450px) {
