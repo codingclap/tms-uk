@@ -218,6 +218,52 @@
    FONT SIZE — up to 100px max
    Base + sm + md + lg + xl + 2xl breakpoints
 ════════════════════════════════════════════════ */
+css/* ── Base text alignment ── */
+.text-left    { text-align: left;    }
+.text-center  { text-align: center;  }
+.text-right   { text-align: right;   }
+.text-justify { text-align: justify; }
+
+/* ── sm: (640px+) ── */
+@media (min-width: 640px) {
+  .sm\:text-left    { text-align: left;    }
+  .sm\:text-center  { text-align: center;  }
+  .sm\:text-right   { text-align: right;   }
+  .sm\:text-justify { text-align: justify; }
+}
+
+/* ── md: (768px+) ── */
+@media (min-width: 768px) {
+  .md\:text-left    { text-align: left;    }
+  .md\:text-center  { text-align: center;  }
+  .md\:text-right   { text-align: right;   }
+  .md\:text-justify { text-align: justify; }
+}
+
+/* ── lg: (1024px+) ── */
+@media (min-width: 1024px) {
+  .lg\:text-left    { text-align: left;    }
+  .lg\:text-center  { text-align: center;  }
+  .lg\:text-right   { text-align: right;   }
+  .lg\:text-justify { text-align: justify; }
+}
+
+/* ── xl: (1280px+) ── */
+@media (min-width: 1280px) {
+  .xl\:text-left    { text-align: left;    }
+  .xl\:text-center  { text-align: center;  }
+  .xl\:text-right   { text-align: right;   }
+  .xl\:text-justify { text-align: justify; }
+}
+
+/* ── 2xl: (1536px+) ── */
+@media (min-width: 1536px) {
+  .\32xl\:text-left    { text-align: left;    }
+  .\32xl\:text-center  { text-align: center;  }
+  .\32xl\:text-right   { text-align: right;   }
+  .\32xl\:text-justify { text-align: justify; }
+}
+
 /* ── Pixel values ── */
 .min-h-\[100px\]  { min-height: 100px;  }
 .min-h-\[200px\]  { min-height: 200px;  }
