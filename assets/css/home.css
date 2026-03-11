@@ -1,4 +1,6 @@
- /* ══════════════ Home Banner Verticle slider ════════════ */
+/*#########################################
+###### Home Banner Verticle Slider  #######
+###########################################*/
  .scroll-box {
    flex: 1;
    overflow: hidden;
@@ -103,33 +105,7 @@
    }
  }
 
- /* .card:hover::after { background: rgba(139,26,47,0.08); } */
- /* ══════════════ Home Banner Verticle slider ════════════ */
+/*#########################################
+###### Home Banner Verticle Slider  #######
+###########################################*/
 
- .home-btn a.primary-btn {
-   border: 3px solid #6D2732;
-   border-radius: 100px;
-   color: #6D2732;
- }
-
- .home-btn .btn-shadow {
-   position: absolute;
-   top: 2px;
-   left: -2px;
-   width: 100%;
-   border: 3px solid #6d2732;
-   height: 100%;
-   border-radius: 100px;
-   padding: 20px 107px;
-   z-index: -1; 
- }
-
- .home-btn .group:hover {
-   background-color: #6d2732;
-   color: #fff
- }
-.home-btn .group:hover a.primary-btn{ 
-   color: #fff
- }
- /* top: 2px;
-  padding: 20px 108px; */
