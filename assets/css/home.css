@@ -1,12 +1,12 @@
- /* ══ COLUMN ══ */
-    .col {
+ /* ══════════════ Home Banner Verticle slider ════════════ */
+    .scroll-box {
       flex: 1;
       overflow: hidden;
       height: 100vh;
     }
 
     /* The inner track — doubled for seamless loop */
-    .track {
+    .scroll-box .track {
       display: flex;
       flex-direction: column;
       gap: 1.25rem;
@@ -14,9 +14,9 @@
     }
 
     /* col-1: scroll UP  */
-    .col:nth-child(1) .track { animation: scrollUp   28s linear infinite; }
+    .scroll-box:nth-child(1) .track { animation: scrollUp   28s linear infinite; }
     /* col-2: scroll DOWN */
-    .col:nth-child(2) .track { animation: scrollDown 22s linear infinite; }
+    .scroll-box:nth-child(2) .track { animation: scrollDown 22s linear infinite; }
     
 
     /* Pause on hover */
@@ -32,13 +32,13 @@
     } */
 
     /* ══ IMAGE CARD ══ */
-    .card {
+    .scroll-box .card {
       width: 100%; 
       overflow: hidden;
       flex-shrink: 0;
       position: relative;
     }
-    .card img {
+    .scroll-box .card img {
       width: 100%;
       display: block;
       object-fit: cover;
@@ -47,34 +47,28 @@
     /* .card:hover img { transform: scale(1.04); } */
 
     /* varied heights */
-    .card.h-s img { height: 450px; }
-    .card.h-m img { height: 450px; }
-    .card.h-l img { height: 450px; }
+    .scroll-box .card.h-s img { height: 580px; }
+    .scroll-box .card.h-m img { height: 580px; }
+    .scroll-box .card.h-l img { height: 580px; }
 
     /* subtle overlay on hover */
-    .card::after {
+    .scroll-box .card::after {
       content:'';
       position:absolute; inset:0;
       background: rgba(139,26,47,0);
       transition: background .3s;
     }
-    /* .card:hover::after { background: rgba(139,26,47,0.08); } */
 
-    /* ══ FADE EDGES ══ */
-    .right::before,
-    .right::after {
-      content:'';
-      position:absolute;
-      left:44%; right:0;
-      height:80px;
-      z-index:3;
-      pointer-events:none;
+    @media (max-width: 1440px) {
+      .scroll-box .card.h-s img { height: 500px; }
+      .scroll-box .card.h-m img { height: 500px; }
+      .scroll-box .card.h-l img { height: 500px; } 
     }
-    .right::before {
-      top:0;
-      background: linear-gradient(to bottom, var(--cream), transparent);
+     @media (max-width: 1024px) {
+      .scroll-box .card.h-s img { height: 400px; }
+      .scroll-box .card.h-m img { height: 400px; }
+      .scroll-box .card.h-l img { height: 400px; } 
     }
-    .right::after {
-      bottom:0;
-      background: linear-gradient(to top, var(--cream), transparent);
-    }
+    /* .card:hover::after { background: rgba(139,26,47,0.08); } */
+ /* ══════════════ Home Banner Verticle slider ════════════ */
+     
