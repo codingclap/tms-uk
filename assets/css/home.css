@@ -1,28 +1,33 @@
  /* ══════════════ Home Banner Verticle slider ════════════ */
-    .scroll-box {
-      flex: 1;
-      overflow: hidden;
-      height: 100vh;
-    }
+ .scroll-box {
+   flex: 1;
+   overflow: hidden;
+   height: 100vh;
+ }
 
-    /* The inner track — doubled for seamless loop */
-    .scroll-box .track {
-      display: flex;
-      flex-direction: column;
-      gap: 1.25rem;
-      will-change: transform;
-    }
+ /* The inner track — doubled for seamless loop */
+ .scroll-box .track {
+   display: flex;
+   flex-direction: column;
+   gap: 1.25rem;
+   will-change: transform;
+ }
 
-    /* col-1: scroll UP  */
-    .scroll-box:nth-child(1) .track { animation: scrollUp   28s linear infinite; }
-    /* col-2: scroll DOWN */
-    .scroll-box:nth-child(2) .track { animation: scrollDown 22s linear infinite; }
-    
+ /* col-1: scroll UP  */
+ .scroll-box:nth-child(1) .track {
+   animation: scrollUp 28s linear infinite;
+ }
 
-    /* Pause on hover */
-    /* .col:hover .track { animation-play-state: paused; } */
+ /* col-2: scroll DOWN */
+ .scroll-box:nth-child(2) .track {
+   animation: scrollDown 22s linear infinite;
+ }
 
-    /* @keyframes scrollUp {
+
+ /* Pause on hover */
+ /* .col:hover .track { animation-play-state: paused; } */
+
+ /* @keyframes scrollUp {
       0%   { transform: translateY(0); }
       100% { transform: translateY(-50%); }
     }
@@ -31,44 +36,101 @@
       100% { transform: translateY(0); }
     } */
 
-    /* ══ IMAGE CARD ══ */
-    .scroll-box .card {
-      width: 100%; 
-      overflow: hidden;
-      flex-shrink: 0;
-      position: relative;
-    }
-    .scroll-box .card img {
-      width: 100%;
-      display: block;
-      object-fit: cover;
-      transition: transform .5s ease;
-    }
-    /* .card:hover img { transform: scale(1.04); } */
+ /* ══ IMAGE CARD ══ */
+ .scroll-box .card {
+   width: 100%;
+   overflow: hidden;
+   flex-shrink: 0;
+   position: relative;
+ }
 
-    /* varied heights */
-    .scroll-box .card.h-s img { height: 580px; }
-    .scroll-box .card.h-m img { height: 580px; }
-    .scroll-box .card.h-l img { height: 580px; }
+ .scroll-box .card img {
+   width: 100%;
+   display: block;
+   object-fit: cover;
+   transition: transform .5s ease;
+ }
 
-    /* subtle overlay on hover */
-    .scroll-box .card::after {
-      content:'';
-      position:absolute; inset:0;
-      background: rgba(139,26,47,0);
-      transition: background .3s;
-    }
+ /* .card:hover img { transform: scale(1.04); } */
 
-    @media (max-width: 1440px) {
-      .scroll-box .card.h-s img { height: 500px; }
-      .scroll-box .card.h-m img { height: 500px; }
-      .scroll-box .card.h-l img { height: 500px; } 
-    }
-     @media (max-width: 1024px) {
-      .scroll-box .card.h-s img { height: 400px; }
-      .scroll-box .card.h-m img { height: 400px; }
-      .scroll-box .card.h-l img { height: 400px; } 
-    }
-    /* .card:hover::after { background: rgba(139,26,47,0.08); } */
+ /* varied heights */
+ .scroll-box .card.h-s img {
+   height: 580px;
+ }
+
+ .scroll-box .card.h-m img {
+   height: 580px;
+ }
+
+ .scroll-box .card.h-l img {
+   height: 580px;
+ }
+
+ /* subtle overlay on hover */
+ .scroll-box .card::after {
+   content: '';
+   position: absolute;
+   inset: 0;
+   background: rgba(139, 26, 47, 0);
+   transition: background .3s;
+ }
+
+ @media (max-width: 1440px) {
+   .scroll-box .card.h-s img {
+     height: 500px;
+   }
+
+   .scroll-box .card.h-m img {
+     height: 500px;
+   }
+
+   .scroll-box .card.h-l img {
+     height: 500px;
+   }
+ }
+
+ @media (max-width: 1024px) {
+   .scroll-box .card.h-s img {
+     height: 400px;
+   }
+
+   .scroll-box .card.h-m img {
+     height: 400px;
+   }
+
+   .scroll-box .card.h-l img {
+     height: 400px;
+   }
+ }
+
+ /* .card:hover::after { background: rgba(139,26,47,0.08); } */
  /* ══════════════ Home Banner Verticle slider ════════════ */
-     
+
+ .home-btn a.primary-btn {
+   border: 3px solid #6D2732;
+   border-radius: 100px;
+   color: #6D2732;
+ }
+
+ .home-btn .btn-shadow {
+   position: absolute;
+   top: 2px;
+   left: -3px;
+   width: 100%;
+   border: 3px solid #6d2732;
+   height: 100%;
+   border-radius: 100px;
+   padding: 20px 108px;
+   z-index: -1;
+
+ }
+
+ .home-btn .group:hover {
+   background-color: #6d2732;
+   color: #fff
+ }
+.home-btn .group:hover a.primary-btn{ 
+   color: #fff
+ }
+ /* top: 2px;
+  padding: 20px 108px; */

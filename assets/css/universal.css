@@ -56,6 +56,12 @@
    font-weight: normal;
    font-style: normal;
 }
+@font-face {
+   font-family: 'Montserrat-ExtraBold';
+   src: url('../fonts/montserrat/Montserrat-ExtraBold.ttf') format('woff2');
+   font-weight: normal;
+   font-style: normal;
+}
 
 .font-gotham-book {
    font-family: 'Gotham-Book', sans-serif;
@@ -88,7 +94,9 @@
 .font-Montserrat-Bold {
    font-family: 'Montserrat-Bold';
 }
-
+.font-Montserrat-ExtraBold {
+   font-family: 'Montserrat-ExtraBold';
+}
 /*#############################
 ###### Custom Fonts ######
 #############################*/
@@ -1063,6 +1071,9 @@
 /* ─────────────────────────────────────────
    TRANSLATE Y
 ───────────────────────────────────────── */
+.translate-y-0 {
+   transform: translateY(0rem);
+}
 .translate-y-1 {
    transform: translateY(0.25rem);
 }
@@ -1103,6 +1114,9 @@
    transform: translateY(2.5rem);
 }
 
+.hover\:translate-y-0:hover {
+   transform: translateY(0rem);
+}
 .hover\:translate-y-1:hover {
    transform: translateY(0.25rem);
 }
@@ -1143,6 +1157,9 @@
    transform: translateY(2.5rem);
 }
 
+.group:hover .group-hover\:translate-y-0 {
+   transform: translateY(0rem);
+}
 .group:hover .group-hover\:translate-y-1 {
    transform: translateY(0.25rem);
 }
