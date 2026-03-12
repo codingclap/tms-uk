@@ -26,13 +26,14 @@
    font-weight: normal;
    font-style: normal;
 }
- 
+
 @font-face {
    font-family: 'Playfair-BoldItalic';
    src: url('../fonts/playfair-display/PlayfairDisplay-BoldItalic.ttf') format('woff2');
    font-weight: normal;
    font-style: normal;
 }
+
 @font-face {
    font-family: 'Playfair-Bold';
    src: url('../fonts/playfair-display/PlayfairDisplay-Bold.ttf') format('woff2');
@@ -127,19 +128,21 @@
 .buttonStyle-One a.primary-btn {
    border: 3px solid #6d2732;
    border-radius: 100px;
-   color: #6d2732
+   color: #6d2732; 
+   z-index: 1; 
 }
 
 .buttonStyle-One .btn-shadow {
    position: absolute;
    top: 2px;
-   left: -2px;
+   left: 0px;
    width: 100%;
    border: 3px solid #6d2732;
    height: 100%;
+   width: 100%;
+   display: block;
    border-radius: 100px;
-   padding: 20px 107px;
-   z-index: -1
+   z-index: -1;
 }
 
 .buttonStyle-One .group:hover {
@@ -153,7 +156,7 @@
 
 @media (max-width: 1023px) {
    .buttonStyle-One .btn-shadow {
-      padding: 15px 84px;
+      
    }
 }
 
