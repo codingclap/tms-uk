@@ -1,7 +1,7 @@
 /*############### Home Banner Verticle Slider   ####################*/
 .scroll-box {
   flex: 1;
-  height: 100vh;
+  height: 1000px;
 }
 
 /* The inner track — doubled for seamless loop */
@@ -104,14 +104,14 @@
 
 @media (max-width:767px) {
   .scroll-box {
-    height: 80vh;
+    height: 90vh;
     overflow: hidden;
   }
 }
 
 @media (max-width:450px) {
   .scroll-box {
-    height: 50vh;
+    height: 80vh;
     overflow: hidden;
   }
 }
