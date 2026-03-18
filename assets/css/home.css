@@ -122,54 +122,57 @@
 
 
 .section-2.add-dot-after:after {
-   position: absolute;
-   content: '';
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   background-image: url('../images/home/dots.webp');
-   background-size: cover;
-   background-repeat: no-repeat;
-   z-index: 0;
-   opacity: 0.5;
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/home/dots.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+  opacity: 0.5;
 }
 
 .section-2.add-logo-before:before {
-   position: absolute;
-   content: '';
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   background-image: url('../images/home/tms-white-logo.webp');
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-size: 50%;
-   background-repeat: no-repeat;
-   background-position: left bottom;
-   z-index: +2;
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/home/tms-white-logo.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  z-index: +2;
 }
 
 @media (max-width: 1350px) {
-   .add-logo-before:before {
-      background-size: 60%;
+  .add-logo-before:before {
+    background-size: 60%;
 
-   }
+  }
 }
 
 @media (max-width: 1024px) {
-   .add-logo-before:before {
-      background-size: 70%;
+  .add-logo-before:before {
+    background-size: 70%;
 
-   }
+  }
 }
 
-  
+.tms-journey {
+  height: 100%;
+}
+
 .tms-journey .tms-paper {
   height: 730px;
   width: 500px;
-  object-fit: contain; 
+  object-fit: contain;
 }
 
 .tms-journey .tms-bookOn-hand {
@@ -177,7 +180,7 @@
   bottom: 0;
   /* height: 328px; */
   width: 60%;
-  object-fit: cover;  
+  object-fit: cover;
 }
 
 .tms-journey .tms-pr {
@@ -190,21 +193,21 @@
 }
 
 .tms-journey .tms-laptop {
-  right: 22%;
+  right: 20%;
   bottom: 10%;
   /* height: 290px; */
-  width: 35%;
+  width: 36%;
   object-fit: cover;
   animation: float-4 4.2s ease-in-out infinite 0.3s;
 }
 
 .tms-journey .tms-illustrator {
-  right: 50%;
-  bottom: 29%;
+  right: 49%;
+  bottom: 28%;
   /* height: 120px; */
   width: 13%;
   object-fit: cover;
-  animation: float-2 4.3s  ease-in-out infinite 0.1s;
+  animation: float-2 4.3s ease-in-out infinite 0.1s;
 }
 
 .tms-journey .tms-branding {
@@ -213,7 +216,7 @@
   /* height: 120px; */
   width: 16%;
   object-fit: cover;
-   animation: float-2 4.2s ease-in-out infinite 0.3s; 
+  animation: float-2 4.2s ease-in-out infinite 0.3s;
 }
 
 .tms-journey .computer-graphic {
@@ -230,7 +233,7 @@
   bottom: 47%;
   /* height: 290px; */
   width: 10%;
-   animation: float-1 4s   ease-in-out infinite 0.3s;
+  animation: float-1 4s ease-in-out infinite 0.3s;
 }
 
 .tms-journey .tms-notice {
@@ -238,7 +241,7 @@
   bottom: 27%;
   /* height: 290px; */
   width: 38%;
-  animation: float-5 4.8s ease-in-out infinite  0.3s;
+  animation: float-5 4.8s ease-in-out infinite 0.3s;
 }
 
 .tms-journey .tms-project {
@@ -247,42 +250,946 @@
   /* height: 290px; */
   width: 15%;
   z-index: 11;
-   animation: float-4 4.5s ease-in-out infinite  0.3s;
+  animation: float-4 4.5s ease-in-out infinite 0.3s;
 }
 
 .tms-journey .tms-bulb {
-  right: 26%;
+  right: 25%;
   bottom: 48%;
   /* height: 290px; */
-  width: 35%;
+  width: 36%;
   z-index: 11;
-  animation: float-3 4s   ease-in-out infinite  0.3s;
+  animation: float-3 4s ease-in-out infinite 0.3s;
 }
 
+@media (max-width:1700px) {
+
+  .tms-journey .tms-paper {
+    height: 730px;
+    width: 500px;
+  }
+
+  .tms-journey .tms-bookOn-hand {
+    left: -10%;
+    bottom: 0;
+    width: 66%;
+  }
+
+  .tms-journey .tms-pr {
+    right: 58%;
+    bottom: 23%;
+    width: 10.4%;
+  }
+
+  .tms-journey .tms-laptop {
+    right: 14%;
+    bottom: 11%;
+    width: 39%;
+  }
+
+  .tms-journey .tms-illustrator {
+    right: 45%;
+    bottom: 27%;
+    width: 13%;
+  }
+
+  .tms-journey .tms-branding {
+    right: 63%;
+    bottom: 32%;
+    width: 16%;
+  }
+
+  .tms-journey .computer-graphic {
+    right: 50%;
+    bottom: 42%;
+    width: 16%;
+  }
+
+  .tms-journey .tms-ps {
+    right: 66%;
+    bottom: 46%;
+    width: 12%;
+  }
+
+  .tms-journey .tms-notice {
+    right: 71%;
+    bottom: 27%;
+    width: 40%;
+  }
+
+  .tms-journey .tms-project {
+    right: 84%;
+    bottom: 44%;
+    width: 15%;
+  }
+
+  .tms-journey .tms-bulb {
+    right: 20%;
+    bottom: 47%;
+    width: 40%;
+  }
+
+}
+
+@media (max-width:1600px) {
+
+  .tms-journey .tms-paper {
+    height: 730px;
+    width: 500px;
+  }
+
+  .tms-journey .tms-bookOn-hand {
+    left: -16%;
+    bottom: 0;
+    width: 70%;
+  }
+
+  .tms-journey .tms-pr {
+    right: 60%;
+    bottom: 22%;
+    width: 12%;
+  }
+
+  .tms-journey .tms-laptop {
+    right: 11%;
+    bottom: 12%;
+    width: 39%;
+  }
+
+  .tms-journey .tms-illustrator {
+    right: 44%;
+    bottom: 26%;
+    width: 15%;
+  }
+
+  .tms-journey .tms-branding {
+    right: 66%;
+    bottom: 35%;
+    width: 18%;
+  }
+
+  .tms-journey .computer-graphic {
+    right: 47%;
+    bottom: 41%;
+    width: 18%;
+  }
+
+  .tms-journey .tms-ps {
+    right: 60%;
+    bottom: 53%;
+    width: 15%;
+  }
+
+  .tms-journey .tms-notice {
+    right: 66%;
+    bottom: 29%;
+    width: 48%;
+  }
+
+  .tms-journey .tms-project {
+    right: 81%;
+    bottom: 49%;
+    width: 20%;
+  }
+
+  .tms-journey .tms-bulb {
+    right: 12%;
+    bottom: 45%;
+    width: 48%;
+  }
+
+}
+
+@media (max-width:1500px) {
+
+  .tms-journey .tms-paper {
+    height: 730px;
+    width: 500px;
+  }
+
+  .tms-journey .tms-bookOn-hand {
+    left: -16%;
+    bottom: 0;
+    width: 70%;
+  }
+
+  .tms-journey .tms-pr {
+    right: 60%;
+    bottom: 22%;
+    width: 12%;
+  }
+
+  .tms-journey .tms-laptop {
+    right: 9%;
+    bottom: 12%;
+    width: 41%;
+  }
+
+  .tms-journey .tms-illustrator {
+    right: 44%;
+    bottom: 26%;
+    width: 15%;
+  }
+
+  .tms-journey .tms-branding {
+    right: 66%;
+    bottom: 32%;
+    width: 18%;
+  }
+
+  .tms-journey .computer-graphic {
+    right: 44%;
+    bottom: 37%;
+    width: 22%;
+  }
+
+  .tms-journey .tms-ps {
+    right: 58%;
+    bottom: 53%;
+    width: 15%;
+  }
+
+  .tms-journey .tms-notice {
+    right: 66%;
+    bottom: 28%;
+    width: 50%;
+  }
+
+  .tms-journey .tms-project {
+    right: 82%;
+    bottom: 49%;
+    width: 20%;
+  }
+
+  .tms-journey .tms-bulb {
+    right: 9%;
+    bottom: 45%;
+    width: 50%;
+  }
+
+}
+
+@media (max-width:1400px) {
+
+  .tms-journey .tms-paper {
+    height: 730px;
+    width: 500px;
+  }
+
+  .tms-journey .tms-bookOn-hand {
+    left: -10%;
+    bottom: 0;
+    width: 80%;
+  }
+
+  .tms-journey .tms-pr {
+    right: 46%;
+    bottom: 22%;
+    width: 14%;
+  }
+
+  .tms-journey .tms-laptop {
+    right: 0%;
+    bottom: 14%;
+    width: 45%;
+  }
+
+  .tms-journey .tms-illustrator {
+    right: 32%;
+    bottom: 27%;
+    width: 16%;
+  }
+
+  .tms-journey .tms-branding {
+    right: 57%;
+    bottom: 30%;
+    width: 22%;
+  }
+
+  .tms-journey .computer-graphic {
+    right: 39%;
+    bottom: 38%;
+    width: 23%;
+  }
+
+  .tms-journey .tms-ps {
+    right: 56%;
+    bottom: 48%;
+    width: 16%;
+  }
+
+  .tms-journey .tms-notice {
+    right: 62%;
+    bottom: 26%;
+    width: 56%;
+  }
+
+  .tms-journey .tms-project {
+    right: 82%;
+    bottom: 46%;
+    width: 21%;
+  }
+
+  .tms-journey .tms-bulb {
+    right: 1%;
+    bottom: 46%;
+    width: 54%;
+  }
+
+}
+
+@media (max-width:1300px) {
+
+  .tms-journey .tms-paper {
+    height: 730px;
+    width: 500px;
+  }
+
+  .tms-journey .tms-bookOn-hand {
+    left: -10%;
+    bottom: 0;
+    width: 80%;
+  }
+
+  .tms-journey .tms-pr {
+    right: 46%;
+    bottom: 22%;
+    width: 14%;
+  }
+
+  .tms-journey .tms-laptop {
+    right: 0%;
+    bottom: 14%;
+    width: 45%;
+  }
+
+  .tms-journey .tms-illustrator {
+    right: 32%;
+    bottom: 27%;
+    width: 16%;
+  }
+
+  .tms-journey .tms-branding {
+    right: 57%;
+    bottom: 30%;
+    width: 22%;
+  }
+
+  .tms-journey .computer-graphic {
+    right: 38%;
+    bottom: 39%;
+    width: 22%;
+  }
+
+  .tms-journey .tms-ps {
+    right: 52%;
+    bottom: 54%;
+    width: 16%;
+  }
+
+  .tms-journey .tms-notice {
+    right: 60%;
+    bottom: 25%;
+    width: 56%;
+  }
+
+  .tms-journey .tms-project {
+    right: 81%;
+    bottom: 44%;
+    width: 21%;
+  }
+
+  .tms-journey .tms-bulb {
+    right: 1%;
+    bottom: 46%;
+    width: 54%;
+  }
+
+}
+
+@media (max-width:1200px) {
+
+  .tms-journey .tms-paper {
+    height: 730px;
+    width: 500px;
+  }
+
+  .tms-journey .tms-bookOn-hand {
+    left: -15%;
+    bottom: 0;
+    width: 88%;
+  }
+
+  .tms-journey .tms-pr {
+    right: 46%;
+    bottom: 22%;
+    width: 14%;
+  }
+
+  .tms-journey .tms-laptop {
+    right: 1%;
+    bottom: 14%;
+    width: 45%;
+  }
+
+  .tms-journey .tms-illustrator {
+    right: 32%;
+    bottom: 27%;
+    width: 16%;
+  }
+
+  .tms-journey .tms-branding {
+    right: 52%;
+    bottom: 30%;
+    width: 22%;
+  }
+
+  .tms-journey .computer-graphic {
+    right: 38%;
+    bottom: 39%;
+    width: 22%;
+  }
+
+  .tms-journey .tms-ps {
+    right: 51%;
+    bottom: 55%;
+    width: 16%;
+  }
+
+  .tms-journey .tms-notice {
+    right: 58%;
+    bottom: 28%;
+    width: 56%;
+  }
+
+  .tms-journey .tms-project {
+    right: 78%;
+    bottom: 44%;
+    width: 21%;
+  }
+
+  .tms-journey .tms-bulb {
+    right: 1%;
+    bottom: 46%;
+    width: 54%;
+  }
+
+}
+
+@media (max-width:1024px) {
+  .tms-journey .tms-notice {
+    right: 50%;
+    bottom: 42%;
+    width: 56%;
+  }
+
+  .tms-journey .tms-bookOn-hand {
+    left: -18%;
+    bottom: 0;
+    width: 92%;
+  }
+
+  .tms-journey .tms-project {
+    right: 71%;
+    bottom: 57%;
+    width: 21%;
+  }
+
+  .tms-journey .tms-laptop {
+    right: 1%;
+    bottom: 13%;
+    width: 45%;
+  }
+
+  .tms-journey .tms-bulb {
+    right: 0%;
+    bottom: 50%;
+    width: 58%;
+  }
+
+  .tms-journey .tms-ps {
+    right: 64%;
+    bottom: 33%;
+    width: 18%;
+  }
+
+  .tms-journey .tms-branding {
+    right: 48%;
+    bottom: 45%;
+    width: 23%;
+  }
+
+  .tms-journey .computer-graphic {
+    right: 22%;
+    bottom: 42%;
+    width: 22%;
+  }
+
+  .tms-journey .tms-pr {
+    right: 59%;
+    bottom: 24%;
+    width: 15%;
+  }
+
+  .tms-journey .tms-illustrator {
+    right: 37%;
+    bottom: 29%;
+    width: 18%;
+  }
+
+}
+
+@media (max-width:850px) {
+  .tms-journey .tms-project {
+    right: 71%;
+    bottom: 55%;
+    width: 21%;
+  }
+
+  .tms-journey .tms-bookOn-hand {
+    left: -18%;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width:767px) {
+  .tms-journey {
+    height: 100vw;
+  }
+
+  .tms-journey .tms-bulb {
+    right: 1%;
+    bottom: 61%;
+    width: 40%;
+  }
+
+  .tms-journey .tms-bookOn-hand {
+    left: 0;
+    bottom: 0;
+    width: 65%;
+  }
+
+  .tms-journey .tms-notice {
+    right: 50%;
+    bottom: 42%;
+    width: 44%;
+  }
+
+  .tms-journey .tms-project {
+    right: 65%;
+    bottom: 66%;
+    width: 16%;
+  }
+
+  .tms-journey .tms-branding {
+    right: 44%;
+    bottom: 48%;
+    width: 19%;
+  }
+
+  .tms-journey .computer-graphic {
+    right: 33%;
+    bottom: 59%;
+    width: 14%;
+  }
+
+  .tms-journey .tms-laptop {
+    right: 1%;
+    bottom: 12%;
+    width: 39%;
+  }
+
+  .tms-journey .tms-ps {
+    right: 44%;
+    bottom: 67%;
+    width: 14%;
+  }
+
+  .tms-journey .tms-illustrator {
+    right: 33%;
+    bottom: 35%;
+    width: 14%;
+  }
+
+  .tms-journey .tms-pr {
+    right: 47%;
+    bottom: 29%;
+    width: 12%;
+  }
+
+}
+
+@media (max-width:700px) {
+  .tms-journey {
+    height: 100vw;
+  }
+
+  .tms-journey .tms-bulb {
+    right: 1%;
+    bottom: 68%;
+    width: 45%;
+  }
+
+  .tms-journey .tms-bookOn-hand {
+    left: 0;
+    bottom: 0;
+    width: 67%;
+  }
+
+  .tms-journey .tms-notice {
+    right: 50%;
+    bottom: 50%;
+    width: 50%;
+  }
+
+  .tms-journey .tms-project {
+    right: 67%;
+    bottom: 72%;
+    width: 18%;
+  }
+
+  .tms-journey .tms-branding {
+    right: 44%;
+    bottom: 59%;
+    width: 17%;
+  }
+
+  .tms-journey .computer-graphic {
+    right: 24%;
+    bottom: 56%;
+    width: 18%;
+  }
+
+  .tms-journey .tms-laptop {
+    right: 1%;
+    bottom: 10%;
+    width: 41%;
+  }
+
+  .tms-journey .tms-ps {
+    right: 46%;
+    bottom: 81%;
+    width: 13%;
+  }
+
+  .tms-journey .tms-illustrator {
+    right: 37%;
+    bottom: 33%;
+    width: 14%;
+  }
+
+  .tms-journey .tms-pr {
+    right: 58%;
+    bottom: 35%;
+    width: 13%;
+  }
+
+
+}
+
+@media (max-width:600px) {
+
+  .tms-journey .tms-notice {
+    right: 50%;
+    bottom: 50%;
+    width: 52%;
+  }
+
+  .tms-journey .tms-project {
+    right: 68%;
+    bottom: 69%;
+    width: 18%;
+  }
+
+  .tms-journey .tms-branding {
+    right: 44%;
+    bottom: 59%;
+    width: 19%;
+  }
+
+  .tms-journey .tms-bookOn-hand {
+    left: 0;
+    bottom: 0;
+    width: 74%;
+  }
+
+  .tms-journey .tms-laptop {
+    right: 1%;
+    bottom: 10%;
+    width: 45%;
+  }
+}
+
+@media (max-width:550px) {
+  .tms-journey .computer-graphic {
+    right: 16%;
+    bottom: 52%;
+    width: 25%;
+  }
+
+  .tms-journey .tms-bulb {
+    right: 1%;
+    bottom: 68%;
+    width: 54%;
+  }
+
+  .tms-journey .tms-bookOn-hand {
+    left: 0;
+    bottom: 0;
+    width: 85%;
+  }
+
+  .tms-journey .tms-laptop {
+    right: 1%;
+    bottom: 14%;
+    width: 46%;
+  }
+
+  .tms-journey .tms-pr {
+    right: 63%;
+    bottom: 35%;
+    width: 15%;
+  }
+
+  .tms-journey .tms-illustrator {
+    right: 39%;
+    bottom: 33%;
+    width: 17%;
+  }
+
+  .tms-journey .tms-ps {
+    right: 46%;
+    bottom: 78%;
+    width: 15%;
+  }
+}
+
+@media (max-width:425px) {
+  .tms-journey .tms-notice {
+    left: 0;
+    top: 15%;
+    width: 58%;
+  }
+
+  .tms-journey .tms-bulb {
+    right: 0;
+    top: 0;
+    width: 61%;
+  }
+
+  .tms-journey .computer-graphic {
+    right: 0;
+    bottom: 52%;
+    width: 35%;
+  }
+
+  .tms-journey .tms-project {
+    right: 61%;
+    bottom: 66%;
+    width: 24%;
+  }
+
+  .tms-journey .tms-branding {
+    right: 35%;
+    bottom: 53%;
+    width: 25%;
+  }
+
+  .tms-journey .tms-laptop {
+    right: 1%;
+    bottom: 19%;
+    width: 52%;
+  }
+
+  .tms-journey .tms-pr {
+    right: 68%;
+    bottom: 31%;
+    width: 15%;
+  }
+
+  .tms-journey .tms-illustrator {
+    right: 44%;
+    bottom: 35%;
+    width: 19%;
+  }
+
+  .tms-journey .tms-ps {
+    right: 68%;
+    bottom: 48%;
+    width: 18%;
+  }
+}
+
+@media (max-width:375px) {
+  .tms-journey .tms-bookOn-hand {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .tms-journey .tms-notice {
+    left: 0;
+    top: 19%;
+    width: 60%;
+  }
+
+  .tms-journey .tms-bulb {
+    right: 0;
+    top: 0;
+    width: 70%;
+  }
+
+  .tms-journey .computer-graphic {
+    right: 0;
+    bottom: 58%;
+    width: 35%;
+  }
+
+  .tms-journey .tms-project {
+    right: 58%;
+    bottom: 66%;
+    width: 25%;
+  }
+
+  .tms-journey .tms-branding {
+    right: 35%;
+    bottom: 53%;
+    width: 25%;
+  }
+
+  .tms-journey .tms-laptop {
+    right: 1%;
+    bottom: 23%;
+    width: 57%;
+  }
+
+  .tms-journey .tms-pr {
+    right: 68%;
+    bottom: 30%;
+    width: 15%;
+  }
+
+  .tms-journey .tms-illustrator {
+    right: 47%;
+    bottom: 35%;
+    width: 19%;
+  }
+
+  .tms-journey .tms-ps {
+    right: 68%;
+    bottom: 44%;
+    width: 18%;
+  }
+}
+
+@media (max-width:330px) {
+  .tms-journey .tms-notice {
+    left: 0;
+    top: 19%;
+    width: 63%;
+  }
+
+  .tms-journey .tms-pr {
+    right: 72%;
+    bottom: 30%;
+    width: 18%;
+  }
+
+  .tms-journey .tms-project {
+    right: 58%;
+    bottom: 67%;
+    width: 25%;
+  }
+
+  .tms-journey .tms-branding {
+    right: 42%;
+    bottom: 52%;
+    width: 30%;
+  }
+
+  .tms-journey .tms-ps {
+    right: 68%;
+    bottom: 44%;
+    width: 20%;
+  }
+
+  .tms-journey .tms-laptop {
+    right: 1%;
+    bottom: 26%;
+    width: 57%;
+  }
+
+  .tms-journey .tms-illustrator {
+    right: 49%;
+    bottom: 35%;
+    width: 21%;
+  }
+}
 
 /* ════════════════════════════════
    Float Animations
 ════════════════════════════════ */
 @keyframes float-1 {
-  0%, 100% { transform: translateY(0px)   rotate(0deg);  }
-  50%       { transform: translateY(-3px) rotate(1.5deg);  }
+
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-3px) rotate(1.5deg);
+  }
 }
+
 @keyframes float-2 {
-  0%, 100% { transform: translateY(0px)  rotate(0deg);  }
-  50%       { transform: translateY(-3px) rotate(-1.5deg); }
+
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-3px) rotate(-1.5deg);
+  }
 }
+
 @keyframes float-3 {
-  0%, 100% { transform: translateY(0px)   rotate(0deg); }
-  50%       { transform: translateY(-4px) rotate(1.5deg); }
+
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-4px) rotate(1.5deg);
+  }
 }
+
 @keyframes float-4 {
-  0%, 100% { transform: translateY(0px)  rotate(0deg);  }
-  50%       { transform: translateY(-3px) rotate(-1.5deg); }
+
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-3px) rotate(-1.5deg);
+  }
 }
+
 @keyframes float-5 {
-  0%, 100% { transform: translateY(0px)   rotate(0deg); }
-  50%       { transform: translateY(-2px) rotate(1.5deg); }
+
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-2px) rotate(1.5deg);
+  }
 }
+
 /*############### section-2 Home Journey   ####################*/
 
 
@@ -293,32 +1200,33 @@
 
 /*############### section-4 Portfolio ####################*/
 .section-4 .add-dot-after:after {
-   position: absolute;
-   content: '';
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   background-image: url('../images/home/dots.webp');
-   background-size: cover;
-   background-repeat: no-repeat;
-   z-index: 0;
-   opacity: 0.7;
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/home/dots.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+  opacity: 0.7;
 }
 
 .section-4 .add-logo-before:before {
-   position: absolute;
-   content: '';
-   top: 0;
-   left:-100px;
-   width: 100%;
-   height: 100%;
-   background-image: url('../images/home/tms-white-black.png');
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-size: 50%;
-   background-repeat: no-repeat;
-   background-position: left bottom;
-   z-index: +2;
+  position: absolute;
+  content: '';
+  top: 0;
+  left: -100px;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/home/tms-white-black.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  z-index: +2;
 }
+
 /*############### section-4 Portfolio ####################*/
