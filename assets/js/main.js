@@ -28,3 +28,28 @@ function animate() {
 }
 
 animate();
+
+
+
+// Home page - Tab Script 
+
+function filterTab(tab) {
+  // Hide all grids
+  document.querySelectorAll('.tab-grid').forEach(grid => {
+    grid.classList.add('hidden');
+  });
+
+  // Reset all buttons
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.classList.remove('bg-maroon', 'text-white');
+    // btn.classList.add('border', 'border-gray-400', 'text-gray-700');
+  });
+
+  // Show selected grid
+  document.getElementById('grid-' + tab).classList.remove('hidden');
+
+  // Activate selected button
+  const activeBtn = document.getElementById('tab-' + tab);
+  activeBtn.classList.add('bg-maroon', 'bg-opacity-100', 'text-white');
+  activeBtn.classList.remove('text-brown');
+}
