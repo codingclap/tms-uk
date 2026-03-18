@@ -246,7 +246,7 @@
   bottom: 44%;
   /* height: 290px; */
   width: 15%;
-  z-index: +11;
+  z-index: 11;
    animation: float-4 4.5s ease-in-out infinite  0.3s;
 }
 
@@ -255,7 +255,7 @@
   bottom: 48%;
   /* height: 290px; */
   width: 35%;
-  z-index: +11;
+  z-index: 11;
   animation: float-3 4s   ease-in-out infinite  0.3s;
 }
 
