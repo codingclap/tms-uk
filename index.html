@@ -79,7 +79,8 @@
     class="flex flex-col mx-1920 md:flex-row min-h-[1024px] lg:min-h-screen w-full bg-cream justify-between bg-opacity-100 w-full bg-cover bg-center overflow-hidden relative"
     style="background-image: url('assets/images/home/home-banner.webp');">
 
-    <div class="flex w-full md:w-full lg:w-50 xl:w-50  justify-end items-center ps-5 sm:ps-5 lg:ps-10 pe-5 sm:pe-5 lg:pe-1 py-16 md:py-0">
+    <div
+        class="flex w-full md:w-full lg:w-50 xl:w-50  justify-end items-center ps-5 sm:ps-5 lg:ps-10 pe-5 sm:pe-5 lg:pe-1 py-16 md:py-0">
 
         <div class="flex flex-col w-full lg:w-85 xl:w-80 ">
             <h1
@@ -148,7 +149,8 @@
 <section
     class="section-2 mx-1920 flex flex-col md:flex-row relative min-h-[1024px] lg:min-h-screen w-full bg-maroon bg-opacity-100 pt-16 justify-between w-full add-dot-after add-logo-before">
 
-    <div class="flex w-full md:w-full lg:w-50 xl:w-50 justify-end items-center ps-5 sm:ps-5 lg:ps-10 pe-5 sm:pe-5 lg:pe-6 py-16 md:py-0">
+    <div
+        class="flex w-full md:w-full lg:w-50 xl:w-50 justify-end items-center ps-5 sm:ps-5 lg:ps-10 pe-5 sm:pe-5 lg:pe-6 py-16 md:py-0">
 
         <div class="flex flex-col w-full lg:w-85 xl:w-80 z-10">
             <p class="font-gotham-Medium text-white-10">WE’RE WITH YOU EVERY STEP OF YOUR</p>
@@ -197,15 +199,36 @@
 </section>
 <!-- ═══════════════════════════════ Section - Two ═══════════════════════════════════════════ -->
 
+<!-- ═══════════════════════════════ Section - Three ═══════════════════════════════════════════ -->
+<section class="section-3 mx-1920 bg-brown bg-opacity-100 px-5 sm:px-9 lg:px-14 pt-16 overflow-hidden">
+
+    <div class="slider">
+        <div class="logos">
+            <img src="images/applelogo.png" alt="">
+            <img src="images/googlelogo.png" alt="">
+            <img src="images/metalogo.png" alt="">
+            <img src="images/nikelogo.png" alt="">
+            <img src="images/playstationlogo.png" alt="">
+            <img src="images/disneylogo.png" alt="">
+            <img src="images/cocacolalogo.png" alt="">
+            <img src="images/visalogo.png" alt="">
+
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════ Section - Three ═══════════════════════════════════════════ -->
+
 
 
 <!-- ═══════════════════════════════ Section - Four ═══════════════════════════════════════════ -->
-<section class="section-4 mx-1920 bg-gray bg-opacity-100 px-5 sm:px-9 lg:px-11 pt-16 overflow-hidden">
-    <div class="py-12"><!----- Spacing-------></div>
-    <div class="flex flex-col items-center justify-center text-center w-full pt-16 pb-10">
-        <p class="font-gotham-Medium text-brown text-16 lg:text-20">Design That Keeps Pace With Your Business</p>
+<section class="section-4 mx-1920 bg-gray bg-opacity-100 px-5 sm:px-9 lg:px-14 pt-20 overflow-hidden">
+    <!-- <div class="py-12"> </div> -->
+    <div class="flex flex-col items-center justify-center text-center w-full pb-10">
+        <p class="font-gotham-Medium text-brown text-18 lg:text-20 xl:text-24">Design That Keeps Pace With Your Business
+        </p>
         <h2
-            class="font-Playfair-Bold text-maroon leading-normal sm:leading-tight xl:leading-tight pt-2 text-30 sm:text-40 md:text-46 lg:text-52 xl:text-60 2xl:text-62">
+            class="font-Playfair-Bold text-maroon leading-snug sm:leading-tight xl:leading-tight pt-2 text-30 sm:text-40 md:text-46 lg:text-52 xl:text-60 2xl:text-62">
             Design that keeps teams <span class="font-Playfair-BoldItalic">moving</span><br class="hidden lg:block" />
             and brands <span class="font-Playfair-BoldItalic">consistent.</span></h2>
     </div>
@@ -226,7 +249,7 @@
     </div>
     <div
         class="flex flex-col md:flex-row relative lg:min-h-screen w-full bg-gray bg-opacity-100 pt-10 justify-between w-full add-dot-after add-logo-before">
-        <div class="relative z-10 max-w-8xl mx-auto py-12">
+        <div class="relative z-10 max-w-8xl mx-auto pt-12 pb-20">
 
             <div id="grid-services" class="tab-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  gap-5">
 
@@ -243,10 +266,14 @@
                             <h3
                                 class="text-xl font-gotham-Bold font-semibold text-20 sm:text-24 md:text-24 lg:text-24 xl:text-28 2xl:text-32 px-4">
                                 Web Design</h3>
-                            <a href="#"
-                                class="mt-2 px-4 py-1 text-sm border border-white rounded-full hover:bg-white hover:text-black transition">
-                                Learn more
-                            </a>
+                            <div class="buttonStyle-three pt-6">
+                                <a href="#"
+                                    class="primary-btn relative group font-gotham-book px-6 py-2 text-md border border-white rounded-full transition">
+                                    Learn more
+                                    <span
+                                        class="btn-shadow translate-y-0 group-hover:translate-y-0 ease-in-out duration-200"></span>
+                                </a>
+                            </div>
                         </div>
 
                     </div>
@@ -265,10 +292,14 @@
                             <h3
                                 class="text-xl font-gotham-Bold font-semibold text-20 sm:text-24 md:text-24 lg:text-24 xl:text-28 2xl:text-32 px-4">
                                 Logo Design</h3>
-                            <a href="#"
-                                class="mt-2 px-4 py-1 text-sm border border-white rounded-full hover:bg-white hover:text-black transition">
-                                Learn more
-                            </a>
+                            <div class="buttonStyle-three pt-6">
+                                <a href="#"
+                                    class="primary-btn relative group font-gotham-book px-6 py-2 text-md border border-white rounded-full transition">
+                                    Learn more
+                                    <span
+                                        class="btn-shadow translate-y-0 group-hover:translate-y-0 ease-in-out duration-200"></span>
+                                </a>
+                            </div>
                         </div>
 
                     </div>
@@ -286,10 +317,14 @@
                             <h3
                                 class="text-xl font-gotham-Bold text-20 sm:text-24 md:text-24 lg:text-24 xl:text-28 2xl:text-32 px-4">
                                 UI/UX Design</h3>
-                            <a href="#"
-                                class="mt-2 px-4 py-1 text-sm border border-white rounded-full hover:bg-white hover:text-black transition">
-                                Learn more
-                            </a>
+                            <div class="buttonStyle-three pt-6">
+                                <a href="#"
+                                    class="primary-btn relative group font-gotham-book px-6 py-2 text-md border border-white rounded-full transition">
+                                    Learn more
+                                    <span
+                                        class="btn-shadow translate-y-0 group-hover:translate-y-0 ease-in-out duration-200"></span>
+                                </a>
+                            </div>
                         </div>
 
                     </div>
@@ -307,10 +342,14 @@
                             <h3
                                 class="text-xl font-gotham-Bold text-20 sm:text-24 md:text-24 lg:text-24 xl:text-28 2xl:text-32 px-4">
                                 Graphic Design</h3>
-                            <a href="#"
-                                class="mt-2 px-4 py-1 text-sm border border-white rounded-full hover:bg-white hover:text-black transition">
-                                Learn more
-                            </a>
+                            <div class="buttonStyle-three pt-6">
+                                <a href="#"
+                                    class="primary-btn relative group font-gotham-book px-6 py-2 text-md border border-white rounded-full transition">
+                                    Learn more
+                                    <span
+                                        class="btn-shadow translate-y-0 group-hover:translate-y-0 ease-in-out duration-200"></span>
+                                </a>
+                            </div>
                         </div>
 
                     </div>
@@ -329,10 +368,14 @@
                             <h3
                                 class="text-xl font-gotham-Bold text-20 sm:text-24 md:text-24 lg:text-24 xl:text-28 2xl:text-32 px-4">
                                 SaaS & <br class="hidden lg:block" /> Product Design</h3>
-                            <a href="#"
-                                class="mt-2 px-4 py-1 text-sm border border-white rounded-full hover:bg-white hover:text-black transition">
-                                Learn more
-                            </a>
+                            <div class="buttonStyle-three pt-6">
+                                <a href="#"
+                                    class="primary-btn relative group font-gotham-book px-6 py-2 text-md border border-white rounded-full transition">
+                                    Learn more
+                                    <span
+                                        class="btn-shadow translate-y-0 group-hover:translate-y-0 ease-in-out duration-200"></span>
+                                </a>
+                            </div>
                         </div>
 
                     </div>
@@ -350,10 +393,14 @@
                             <h3
                                 class="text-xl font-gotham-Bold text-20 sm:text-24 md:text-24 lg:text-24 xl:text-28 2xl:text-32 px-4">
                                 E-commerce <br class="hidden lg:block" />Design</h3>
-                            <a href="#"
-                                class="mt-2 px-4 py-1 text-sm border border-white rounded-full hover:bg-white hover:text-black transition">
-                                Learn more
-                            </a>
+                            <div class="buttonStyle-three pt-6">
+                                <a href="#"
+                                    class="primary-btn relative group font-gotham-book px-6 py-2 text-md border border-white rounded-full transition">
+                                    Learn more
+                                    <span
+                                        class="btn-shadow translate-y-0 group-hover:translate-y-0 ease-in-out duration-200"></span>
+                                </a>
+                            </div>
                         </div>
 
                     </div>
@@ -371,10 +418,14 @@
                             <h3
                                 class="text-xl font-gotham-Bold text-20 sm:text-24 md:text-24 lg:text-24 xl:text-28 2xl:text-32 px-4">
                                 Branding & <br class="hidden lg:block" />Identity Design</h3>
-                            <a href="#"
-                                class="mt-2 px-4 py-1 text-sm border border-white rounded-full hover:bg-white hover:text-black transition">
-                                Learn more
-                            </a>
+                            <div class="buttonStyle-three pt-6">
+                                <a href="#"
+                                    class="primary-btn relative group font-gotham-book px-6 py-2 text-md border border-white rounded-full transition">
+                                    Learn more
+                                    <span
+                                        class="btn-shadow translate-y-0 group-hover:translate-y-0 ease-in-out duration-200"></span>
+                                </a>
+                            </div>
                         </div>
 
                     </div>
@@ -384,7 +435,7 @@
             <div id="grid-industries" class="tab-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2  gap-5 hidden">
 
                 <!-- 1 Web -->
-                <div class="aspect-square aspect-5-5 lg:aspect-5-4 xl:aspect-5-3 border-white">
+                <div class="aspect-5-5 lg:aspect-5-4 xl:aspect-5-3 border-white">
                     <div class="relative h-full w-full group overflow-hidden">
 
                         <img src="assets/images/home/industries/saas.webp"
@@ -396,17 +447,21 @@
                             <h3
                                 class="text-xl font-gotham-Bold text-20 sm:text-24 md:text-24 lg:text-24 xl:text-28 2xl:text-32 px-4">
                                 SaaS Design Agency</h3>
-                            <a href="#"
-                                class="mt-2 px-4 py-1 text-sm border border-white rounded-full hover:bg-white hover:text-black transition">
-                                Learn more
-                            </a>
+                            <div class="buttonStyle-three pt-6">
+                                <a href="#"
+                                    class="primary-btn relative group font-gotham-book px-6 py-2 text-md border border-white rounded-full transition">
+                                    Learn more
+                                    <span
+                                        class="btn-shadow translate-y-0 group-hover:translate-y-0 ease-in-out duration-200"></span>
+                                </a>
+                            </div>
                         </div>
 
                     </div>
                 </div>
 
                 <!-- 2 Logo -->
-                <div class="aspect-square aspect-5-5 lg:aspect-5-4 xl:aspect-5-3 border-white">
+                <div class="aspect-5-5 lg:aspect-5-4 xl:aspect-5-3 border-white">
                     <div class="relative h-full w-full group overflow-hidden ">
 
                         <img src="assets/images/home/industries/fintech.webp"
@@ -418,17 +473,21 @@
                             <h3
                                 class="text-xl font-gotham-Bold text-20 sm:text-24 md:text-24 lg:text-24 xl:text-28 2xl:text-32 px-4">
                                 Fintech Design Services</h3>
-                            <a href="#"
-                                class="mt-2 px-4 py-1 text-sm border border-white rounded-full hover:bg-white hover:text-black transition">
-                                Learn more
-                            </a>
+                            <div class="buttonStyle-three pt-6">
+                                <a href="#"
+                                    class="primary-btn relative group font-gotham-book px-6 py-2 text-md border border-white rounded-full transition">
+                                    Learn more
+                                    <span
+                                        class="btn-shadow translate-y-0 group-hover:translate-y-0 ease-in-out duration-200"></span>
+                                </a>
+                            </div>
                         </div>
 
                     </div>
                 </div>
 
                 <!-- 3 UI/UX -->
-                <div class="aspect-square aspect-5-5 lg:aspect-5-4 xl:aspect-5-3 border-white">
+                <div class="aspect-5-5 lg:aspect-5-4 xl:aspect-5-3 border-white">
                     <div class="relative h-full w-full group overflow-hidden ">
 
                         <img src="assets/images/home/industries/healthcare.webp" class="w-full h-full object-cover">
@@ -439,17 +498,21 @@
                             <h3
                                 class="text-xl font-gotham-Bold text-20 sm:text-24 md:text-24 lg:text-24 xl:text-28 2xl:text-32 px-4">
                                 Healthcare Design Agency</h3>
-                            <a href="#"
-                                class="mt-2 px-4 py-1 text-sm border border-white rounded-full hover:bg-white hover:text-black transition">
-                                Learn more
-                            </a>
+                            <div class="buttonStyle-three pt-6">
+                                <a href="#"
+                                    class="primary-btn relative group font-gotham-book px-6 py-2 text-md border border-white rounded-full transition">
+                                    Learn more
+                                    <span
+                                        class="btn-shadow translate-y-0 group-hover:translate-y-0 ease-in-out duration-200"></span>
+                                </a>
+                            </div>
                         </div>
 
                     </div>
                 </div>
 
                 <!-- 4 SaaS -->
-                <div class="aspect-square aspect-5-5 lg:aspect-5-4 xl:aspect-5-3 border-white">
+                <div class="aspect-5-5 lg:aspect-5-4 xl:aspect-5-3 border-white">
                     <div class="relative h-full w-full group overflow-hidden ">
 
                         <img src="assets/images/home/industries/real-estate.webp" class="w-full h-full object-cover">
@@ -460,10 +523,14 @@
                             <h3
                                 class="text-xl font-gotham-Bold text-20 sm:text-24 md:text-24 lg:text-24 xl:text-28 2xl:text-32 px-4">
                                 Real Estate Design</h3>
-                            <a href="#"
-                                class="mt-2 px-4 py-1 text-sm border border-white rounded-full hover:bg-white hover:text-black transition">
-                                Learn more
-                            </a>
+                            <div class="buttonStyle-three pt-6">
+                                <a href="#"
+                                    class="primary-btn relative group font-gotham-book px-6 py-2 text-md border border-white rounded-full transition">
+                                    Learn more
+                                    <span
+                                        class="btn-shadow translate-y-0 group-hover:translate-y-0 ease-in-out duration-200"></span>
+                                </a>
+                            </div>
                         </div>
 
                     </div>
@@ -475,7 +542,7 @@
                 class="tab-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 mx-auto w-full gap-5 hidden">
 
                 <!-- 1 Web -->
-                <div class="aspect-square aspect-5-3 lg:aspect-5-3 xl:aspect-5-2 w-full h-full border-white">
+                <div class="aspect-5-3 lg:aspect-5-3 xl:aspect-5-2 w-full h-full border-white">
                     <div class="relative h-full w-full group overflow-hidden">
 
                         <img src="assets/images/home/agency/agency-london.webp"
@@ -486,7 +553,8 @@
                         <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center">
                             <h3
                                 class="text-xl font-gotham-Bold text-20 sm:text-20 md:text-24 lg:text-24 xl:text-28 2xl:text-32 px-4">
-                                Design Agency <spam class="font-Playfair-BoldItalic">London</spam></h3>
+                                Design Agency <spam class="font-Playfair-BoldItalic">London</spam>
+                            </h3>
 
                         </div>
 
@@ -494,7 +562,7 @@
                 </div>
 
                 <!-- 2 Logo -->
-                <div class="aspect-square aspect-5-3 lg:aspect-5-3 xl:aspect-5-2 border-white">
+                <div class="aspect-5-3 lg:aspect-5-3 xl:aspect-5-2 border-white">
                     <div class="relative h-full w-full group overflow-hidden ">
 
                         <img src="assets/images/home/agency/agency-manchester.webp"
@@ -505,7 +573,8 @@
                         <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center">
                             <h3
                                 class="text-xl font-gotham-Bold text-20 sm:text-20 md:text-20 lg:text-24 xl:text-28 2xl:text-32 px-4">
-                                Design Agency <spam class="font-Playfair-BoldItalic">Manchester</spam></h3>
+                                Design Agency <spam class="font-Playfair-BoldItalic">Manchester</spam>
+                            </h3>
 
                         </div>
 
@@ -513,7 +582,7 @@
                 </div>
 
                 <!-- 3 UI/UX -->
-                <div class="aspect-square aspect-5-3 lg:aspect-5-3 xl:aspect-5-2 border-white">
+                <div class="aspect-5-3 lg:aspect-5-3 xl:aspect-5-2 border-white">
                     <div class="relative h-full w-full group overflow-hidden ">
 
                         <img src="assets/images/home/agency/agency-birmingham.webp" class="w-full h-full object-cover">
@@ -523,14 +592,15 @@
                         <div class="absolute inset-0 flex items-center justify-center text-white text-center">
                             <h3
                                 class="text-xl font-gotham-Bold text-20 sm:text-20 md:text-20 lg:text-24 xl:text-28 2xl:text-32 px-4">
-                                Design Agency <spam class="font-Playfair-BoldItalic">Birmingham</spam></h3>
+                                Design Agency <spam class="font-Playfair-BoldItalic">Birmingham</spam>
+                            </h3>
                         </div>
 
                     </div>
                 </div>
 
                 <!-- 4 SaaS -->
-                <div class="aspect-square aspect-5-3 lg:aspect-5-3 xl:aspect-5-2 border-white">
+                <div class="aspect-5-3 lg:aspect-5-3 xl:aspect-5-2 border-white">
                     <div class="relative h-full w-full group overflow-hidden ">
 
                         <img src="assets/images/home/agency/agency-leeds.webp" class="w-full h-full object-cover">
@@ -540,14 +610,15 @@
                         <div class="absolute inset-0 flex items-center justify-center text-white text-center">
                             <h3
                                 class="text-xl font-gotham-Bold text-20 sm:text-20 md:text-20 lg:text-24 xl:text-28 2xl:text-32 px-4">
-                                Design Agency <spam class="font-Playfair-BoldItalic">Leeds</spam></h3>
+                                Design Agency <spam class="font-Playfair-BoldItalic">Leeds</spam>
+                            </h3>
                         </div>
 
                     </div>
                 </div>
 
 
-                <div class="aspect-square aspect-5-3 lg:aspect-5-3 xl:aspect-5-2 border-white">
+                <div class="aspect-5-3 lg:aspect-5-3 xl:aspect-5-2 border-white">
                     <div class="relative h-full w-full group overflow-hidden ">
 
                         <img src="assets/images/home/agency/agency-bristol.webp" class="w-full h-full object-cover">
@@ -557,7 +628,8 @@
                         <div class="absolute inset-0 flex items-center justify-center text-white text-center">
                             <h3
                                 class="text-xl font-gotham-Bold text-20 sm:text-20 md:text-20 lg:text-24 xl:text-28 2xl:text-32 px-4">
-                                Design Agency <spam class="font-Playfair-BoldItalic">Bristol</spam></h3>
+                                Design Agency <spam class="font-Playfair-BoldItalic">Bristol</spam>
+                            </h3>
                         </div>
 
                     </div>
@@ -568,6 +640,186 @@
     </div>
 </section>
 <!-- ═══════════════════════════════ Section - Four ═══════════════════════════════════════════ -->
+
+
+<!-- ═══════════════════════════════ Section - Five ═══════════════════════════════════════════ -->
+<section class="section-5 mx-1920 bg-gray bg-opacity-100 px-5 sm:px-9 lg:px-14 pt-20 pb-20 overflow-hidden">
+    <div class="flex flex-col items-center justify-center text-center w-full pb-10">
+        <p class="font-gotham-Medium text-brown text-20 lg:text-28 xl:text-36">Success measured in more than just likes
+            —</p>
+        <h2
+            class="font-Playfair-BoldItalic text-maroon leading-snug sm:leading-tight xl:leading-tight  pt-2 text-30 sm:text-40 md:text-46 lg:text-46 xl:text-48">
+            driven by traffic, rankings and <br class="hidden lg:block" /><span class="font-Playfair-BoldItalic">real
+                business growth.</span> </h2>
+    </div>
+
+    <div class="flex flex-col md:flex-row items-center justify-center gap-6 sm:gap-10 lg:gap-20 pt-8">
+        <div class="flex items-center justify-center w-full md:w-full lg:w-30 xl:w-25">
+            <div class="flex flex-col items-center">
+                <div
+                    class="success-measured flex flex-row font-brunson text-90 sm:text-100 md:text-120 lg:text-150 xl:text-180">
+                    <span>50</span>+
+                </div>
+                <span class="font-gotham-Medium pt-6 text-brown text-18 lg:text-20 xl:text-24">Projects Completed</span>
+            </div>
+        </div>
+        <div class="flex items-center justify-center w-full md:w-full lg:w-30 xl:w-25">
+            <div class="flex flex-col items-center">
+                <div
+                    class="success-measured flex flex-row font-brunson text-90 sm:text-100 md:text-120 lg:text-150 xl:text-180">
+                    <span>5</span>+
+                </div>
+                <span class="font-gotham-Medium pt-6 text-brown text-18 lg:text-20 xl:text-24">Years of
+                    Experience</span>
+            </div>
+        </div>
+        <div class="flex items-center justify-center w-full md:w-full lg:w-30 xl:w-25">
+            <div class="flex flex-col items-center">
+                <div
+                    class="success-measured flex flex-row font-brunson text-90 sm:text-100 md:text-120 lg:text-150 xl:text-180">
+                    <span>100</span>+
+                </div>
+                <span class="font-gotham-Medium pt-6 text-brown text-18 lg:text-20 xl:text-24">Happy Customers</span>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- ═══════════════════════════════ Section - Five ═══════════════════════════════════════════ -->
+
+<!-- ═══════════════════════════════ Section - Six ═══════════════════════════════════════════ -->
+<section class="section-6 relative mx-1920 bg-warm bg-opacity-100 px-5 sm:px-9 lg:px-14 pt-20 pb-20 overflow-hidden">
+    <div class="absolute left-0 top-0 w-100 z-6">
+        <img class="h-[100px] w-100" src="assets/images/home/warm-shadow-layer.webp" alt="">
+    </div>
+    <div class="flex flex-col relative items-center justify-center text-center w-full sm:pt-0 md:pt-6 xl:pt-6 pb-10">
+        <h2
+            class="font-Playfair-BoldItalic text-black leading-snug sm:leading-tight xl:leading-tight pt-2 text-40 sm:text-48 md:text-56 lg:text-64 xl:text-72">
+            Our <span class="font-Playfair-BoldItalic text-maroon">approach</span> to your <span
+                class="font-Playfair-BoldItalic text-maroon">growth</span> </h2>
+    </div>
+
+    <div class="flex flex-col items-center justify-center pt-10">
+
+        <!---- No. 1---->
+        <div class="relative flex items-center justify-center w-full success-border-before">
+            <div
+                class="flex flex-col sm:flex-row md:flex-row lg:flex-row justify-center items-center py-6 gap-3 sm:gap-10 lg:gap-10 w-full">
+                <div class="success-measured w-25 text-brown font-gotham-Medium flex flex-row justify-end">
+                    <span class="text-80 success-number sm:text-80 md:text-80 lg:text-120 xl:text-120">01</span>
+                </div>
+                <div class="text-brown w-100 sm:w-100 lg:w-40">
+                    <span class="font-gotham-Bold text-20 lg:text-20 xl:text-36">Discover</span>
+                    <p
+                        class="font-gotham-Medium leading-snug text-capitalize pt-1 text-14 sm:text-14 md:text-14 lg:text-14 xl:text-16">
+                        We start by understanding the foundation of your business. This includes deep research into your
+                        brand, industry, competitors, and target audience.</p>
+                </div>
+            </div>
+        </div>
+
+        <!---- No. 2---->
+        <div class="relative flex items-center justify-center w-full success-border-before">
+            <div
+                class="flex flex-col sm:flex-row md:flex-row lg:flex-row justify-center items-center py-6 gap-3 sm:gap-10 lg:gap-10 w-full">
+                <div class="success-measured w-25 text-brown font-gotham-Medium flex flex-row justify-end">
+                    <span class="text-80 success-number sm:text-80 md:text-80 lg:text-120 xl:text-120">02</span>
+                </div>
+                <div class="text-brown w-100 sm:w-100 lg:w-40">
+                    <span class="font-gotham-Bold text-20 lg:text-20 xl:text-36">Strategize</span>
+                    <p
+                        class="font-gotham-Medium leading-snug text-capitalize pt-1 text-14 sm:text-14 md:text-14 lg:text-14 xl:text-16">
+                        With the right insights in place, we build a focused plan tailored to your goals. We map out the
+                        design direction, SEO roadmap, content structure, and user journey to ensure everything works
+                        together.</p>
+                </div>
+            </div>
+        </div>
+
+        <!---- No. 3---->
+        <div class="relative flex items-center justify-center w-full success-border-before">
+            <div
+                class="flex flex-col sm:flex-row md:flex-row lg:flex-row justify-center items-center py-6 gap-3 sm:gap-10 lg:gap-10 w-full">
+                <div class="success-measured w-25 text-brown font-gotham-Medium flex flex-row justify-end">
+                    <span class="text-80 success-number sm:text-80 md:text-80 lg:text-120 xl:text-120">03</span>
+                </div>
+                <div class="text-brown w-100 sm:w-100 lg:w-40">
+                    <span class="font-gotham-Bold text-20 lg:text-20 xl:text-36">Design & Optimize</span>
+                    <p
+                        class="font-gotham-Medium leading-snug text-capitalize pt-1 text-14 sm:text-14 md:text-14 lg:text-14 xl:text-16">
+                        This is where creativity meets performance. We craft visually compelling designs that reflect
+                        your brand while ensuring they are optimized for usability, speed, and search engines.</p>
+                </div>
+            </div>
+        </div>
+
+        <!---- No. 4---->
+        <div class="relative flex items-center justify-center w-full success-border-before success-border-after">
+            <div
+                class="flex flex-col sm:flex-row md:flex-row lg:flex-row justify-center items-center py-6 gap-3 sm:gap-10 lg:gap-10 w-full">
+                <div class="success-measured w-25 text-brown font-gotham-Medium flex flex-row justify-end">
+                    <span class="text-80 success-number sm:text-80 md:text-80 lg:text-120 xl:text-120">04</span>
+                </div>
+                <div class="text-brown w-100 sm:w-100 lg:w-40">
+                    <span class="font-gotham-Bold text-20 lg:text-20 xl:text-36">Launch & Grow</span>
+                    <p
+                        class="font-gotham-Medium leading-snug text-capitalize pt-1 text-14 sm:text-14 md:text-14 lg:text-14 xl:text-16">
+                        Once everything is ready, we launch with precision and continue to support your growth. We
+                        monitor performance, analyze user behavior, and track key SEO metrics to understand what’s
+                        working best.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<!-- ═══════════════════════════════ Section - Six ═══════════════════════════════════════════ -->
+
+<!-- ═══════════════════════════════ Section - Seven ═══════════════════════════════════════════ -->
+<section class="section-6 mx-1920 bg-warm bg-opacity-100 px-5 sm:px-9 lg:px-14 pt-20 pb-20 overflow-hidden">
+    <div class="flex flex-col mx-1400 items-start text-center w-full sm:pt-0 md:pt-6 xl:pt-6 pb-10">
+        <h2
+            class="font-Playfair-BoldItalic text-black leading-snug sm:leading-tight xl:leading-tight pt-2 text-40 sm:text-48 md:text-56 lg:text-64 xl:text-72">
+            Case <span class="font-Playfair-BoldItalic text-maroon">Studies</span> </h2>
+    </div>
+
+    <div
+        class="mx-1400 flex flex-col sm:flex-row md:flex-row lg:flex-row justify-start items-center py-6 gap-6 sm:gap-10 lg:gap-12 w-full">
+
+        <div class="w-100 lg:w-45 xl:w-45">
+            <div class="w-60 caseStudy-top border-white-20 bg-brown bg-opacity-100"></div>
+            <div
+                class="border pt-6 pb-6 ps-6 pe-6 sm:pt-8 sm:pb-8 sm:ps-8 sm:pe-8 md:pt-8 md:pb-8 md:ps-8 md:pe-8 xl:pt-11 xl:pb-11 xl:ps-11 xl:pe-11 bg-brown bg-opacity-100">
+                <div class="relative">
+                    <img src="assets/images/home/case-study-1.webp" alt="">
+                    <img class="absolute bottom-0" src="assets/images/home/case-study-shadow.webp" alt="">
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w-100 lg:w-45 xl:w-45">
+            <div class="w-60 caseStudy-top border-white-20 bg-brown bg-opacity-100"></div>
+            <div
+                class="border pt-6 pb-6 ps-6 pe-6 sm:pt-8 sm:pb-8 sm:ps-8 sm:pe-8 md:pt-8 md:pb-8 md:ps-8 md:pe-8 xl:pt-11 xl:pb-11 xl:ps-11 xl:pe-11 bg-brown bg-opacity-100">
+                <div class="relative">
+                    <img src="assets/images/home/case-study-2.webp" alt="">
+                    <img class="absolute bottom-0" src="assets/images/home/case-study-shadow.webp" alt="">
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- ═══════════════════════════════ Section - Seven ═══════════════════════════════════════════ -->
+
+
 
 
 

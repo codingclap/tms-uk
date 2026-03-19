@@ -111,7 +111,7 @@
 
 @media (max-width:450px) {
   .scroll-box {
-    height: 80vh;
+    height: 90vh;
     overflow: hidden;
   }
 }
@@ -1194,6 +1194,50 @@
 
 
 /*############### section-3 Clients ####################*/
+.section-5 .success-measured {
+  color: #322d2a00;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--Brown, #322d2a);
+  letter-spacing: 0.05em;
+}
+
+.success-measured .success-number {
+  width: 160px;
+}
+
+.success-border-before::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-image: url('../images/home/border.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: +2;
+}
+
+.success-border-after:after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-image: url('../images/home/border.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: +2;
+}
+
+@media (max-width:1023px) {
+  .success-measured .success-number {
+    width: auto;
+  }
+}
 
 /*############### section-3 Clients ####################*/
 
@@ -1223,10 +1267,47 @@
   background-image: url('../images/home/tms-white-black.png');
   background-size: cover;
   background-repeat: no-repeat;
-  background-size: 50%;
-  background-repeat: no-repeat;
+  background-size: 50%; 
   background-position: left bottom;
   z-index: +2;
 }
 
 /*############### section-4 Portfolio ####################*/
+
+
+
+/*############### section-5 Success measured ####################*/
+
+/*############### section-5 Success measured ####################*/
+
+/*############### section-6 Case Study ####################*/
+.section-6 .caseStudy-top {
+  max-width: 330px;
+  height: 60px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+
+
+@media(max-width:768px) {
+  .section-6 .caseStudy-top {
+    max-width: 330px;
+    height: 50px;
+  }
+}
+
+@media(max-width:500px) {
+  .section-6 .caseStudy-top {
+    max-width: 330px;
+    height: 45px;
+  }
+}
+
+@media(max-width:400px) {
+  .section-6 .caseStudy-top {
+    max-width: 330px;
+    height: 40px;
+  }
+}
+
+/*############### section-6 Case Study ####################*/
