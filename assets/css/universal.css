@@ -13,9 +13,12 @@ body {
    max-width: 1920px;
    margin: 0 auto;
 }
-
-.mx-1400 {
-   max-width: 1400px;
+.mx-1300 {
+   max-width: 1300px;
+   margin: 0 auto;
+}
+.mx-1440 {
+   max-width: 1440px;
    margin: 0 auto;
 }
 
@@ -1568,6 +1571,14 @@ body {
 /* ─────────────────────────────────────────
    TRANSLATE Y
 ───────────────────────────────────────── */
+.rotate-0 {
+   transform: rotate(0deg);
+}
+.hover\:rotate-45:hover {
+   transform: rotate(45deg);
+}
+
+
 .translate-y-0 {
    transform: translateY(0rem);
 }
@@ -1700,129 +1711,7 @@ body {
    transform: translateY(2.5rem);
 }
 
-/* ─────────────────────────────────────────
-   -TRANSLATE Y (negative)
-───────────────────────────────────────── */
-.-translate-y-1 {
-   transform: translateY(-0.25rem);
-}
-
-.-translate-y-2 {
-   transform: translateY(-0.5rem);
-}
-
-.-translate-y-3 {
-   transform: translateY(-0.75rem);
-}
-
-.-translate-y-4 {
-   transform: translateY(-1rem);
-}
-
-.-translate-y-5 {
-   transform: translateY(-1.25rem);
-}
-
-.-translate-y-6 {
-   transform: translateY(-1.5rem);
-}
-
-.-translate-y-7 {
-   transform: translateY(-1.75rem);
-}
-
-.-translate-y-8 {
-   transform: translateY(-2rem);
-}
-
-.-translate-y-9 {
-   transform: translateY(-2.25rem);
-}
-
-.-translate-y-10 {
-   transform: translateY(-2.5rem);
-}
-
-.hover\:-translate-y-1:hover {
-   transform: translateY(-0.25rem);
-}
-
-.hover\:-translate-y-2:hover {
-   transform: translateY(-0.5rem);
-}
-
-.hover\:-translate-y-3:hover {
-   transform: translateY(-0.75rem);
-}
-
-.hover\:-translate-y-4:hover {
-   transform: translateY(-1rem);
-}
-
-.hover\:-translate-y-5:hover {
-   transform: translateY(-1.25rem);
-}
-
-.hover\:-translate-y-6:hover {
-   transform: translateY(-1.5rem);
-}
-
-.hover\:-translate-y-7:hover {
-   transform: translateY(-1.75rem);
-}
-
-.hover\:-translate-y-8:hover {
-   transform: translateY(-2rem);
-}
-
-.hover\:-translate-y-9:hover {
-   transform: translateY(-2.25rem);
-}
-
-.hover\:-translate-y-10:hover {
-   transform: translateY(-2.5rem);
-}
-
-.group:hover .group-hover\:-translate-y-1 {
-   transform: translateY(-0.25rem);
-}
-
-.group:hover .group-hover\:-translate-y-2 {
-   transform: translateY(-0.5rem);
-}
-
-.group:hover .group-hover\:-translate-y-3 {
-   transform: translateY(-0.75rem);
-}
-
-.group:hover .group-hover\:-translate-y-4 {
-   transform: translateY(-1rem);
-}
-
-.group:hover .group-hover\:-translate-y-5 {
-   transform: translateY(-1.25rem);
-}
-
-.group:hover .group-hover\:-translate-y-6 {
-   transform: translateY(-1.5rem);
-}
-
-.group:hover .group-hover\:-translate-y-7 {
-   transform: translateY(-1.75rem);
-}
-
-.group:hover .group-hover\:-translate-y-8 {
-   transform: translateY(-2rem);
-}
-
-.group:hover .group-hover\:-translate-y-9 {
-   transform: translateY(-2.25rem);
-}
-
-.group:hover .group-hover\:-translate-y-10 {
-   transform: translateY(-2.5rem);
-}
-
+ 
 /* ─────────────────────────────────────────
    TRANSLATE X
 ───────────────────────────────────────── */
@@ -2353,7 +2242,14 @@ body {
 .bg-warm.bg-opacity-100 {
    background-color: rgba(241, 232, 224, 1.00);
 }
+/* ── warm -dark── */
+.bg-warm-dark.bg-opacity-10 {
+   background-color: rgba(170, 157, 142, 0.10);
+}
 
+.bg-warm-dark.bg-opacity-100 {
+   background-color: rgba(170, 157, 142, 1.00);
+}
 /* ── BLACK ── */
 .bg-black.bg-opacity-10 {
    background-color: rgba(0, 0, 0, 0.10);

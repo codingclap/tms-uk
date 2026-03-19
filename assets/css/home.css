@@ -1267,7 +1267,7 @@
   background-image: url('../images/home/tms-white-black.png');
   background-size: cover;
   background-repeat: no-repeat;
-  background-size: 50%; 
+  background-size: 50%;
   background-position: left bottom;
   z-index: +2;
 }
@@ -1287,7 +1287,9 @@
   border-radius: 20px 20px 0px 0px;
 }
 
-
+.section-6 .caseStudy-card .card-arrow {
+  width: 40px;
+}
 
 @media(max-width:768px) {
   .section-6 .caseStudy-top {
@@ -1301,6 +1303,10 @@
     max-width: 330px;
     height: 45px;
   }
+
+  .section-6 .caseStudy-card .card-arrow {
+    width: 28px;
+  }
 }
 
 @media(max-width:400px) {
@@ -1308,6 +1314,20 @@
     max-width: 330px;
     height: 40px;
   }
+
+  .section-6 .caseStudy-card .card-arrow {
+    width: 25px;
+  }
 }
 
 /*############### section-6 Case Study ####################*/
+
+
+/*############### Footer ####################*/
+.footer .follow-us img {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+}
+
+/*############### Footer ####################*/
