@@ -220,6 +220,12 @@
             object-fit: contain;
             display: block;
         }
+        
+        @media(max-width:767px) {
+            .marquee-text { 
+                width: 120px;
+            }
+        }
     </style>
     <section class="section-3 mx-1920 bg-brown bg-opacity-100 pt-20 pb-20 overflow-hidden">
         <div class="flex flex-col items-center justify-center text-center w-full pb-10 px-5 sm:px-9 lg:px-14">
@@ -229,7 +235,7 @@
 
         </div>
         <div class="logo-slider">
-            <div class="marquee-inner gap-16" id="logo-marqueeInner">
+            <div class="marquee-inner sm:gap-6 md:gap-6 lg:gap-10 xl:gap-14" id="logo-marqueeInner">
                 <img class="marquee-text" src="assets/images/home/brand/emaar.png" alt="">
                 <img class="marquee-text" src="assets/images/home/brand/adcb.png" alt="">
                 <img class="marquee-text" src="assets/images/home/brand/signature.png" alt="">
