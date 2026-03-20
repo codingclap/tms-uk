@@ -959,31 +959,38 @@
 
         /*************** Custom GSAP Animation for Header Image and Logo ****************/
         gsap.registerPlugin(ScrollTrigger);
-
         document.addEventListener("DOMContentLoaded", () => {
             const track = document.querySelector("#logo-marqueeInner");
+            const slider = document.querySelector(".logo-slider");
 
-            if (!track) return;
+            if (!track || !slider) return;
 
-            // 🔁 Clone ONCE only (not loop cloning)
-            const items = Array.from(track.children);
-            items.forEach(item => {
-                track.appendChild(item.cloneNode(true));
-            });
+            // 🔁 Clone items (same as before)
+            const originalItems = Array.from(track.children);
+            let trackWidth = track.scrollWidth;
+            const sliderWidth = slider.offsetWidth;
 
-            // 🎯 Use xPercent instead of pixel distance (SMOOTHER)
-            const speed = 20; // lower = slower
+            while (trackWidth < sliderWidth * 2) {
+                originalItems.forEach(item => {
+                    track.appendChild(item.cloneNode(true));
+                });
+                trackWidth = track.scrollWidth;
+            }
 
-            const tween = gsap.to(track, {
+            // 🎯 FIX: Speed based on pixels per second
+            const speed = 50; // px per second (adjust this)
+
+            const distance = track.scrollWidth / 2; // loop distance
+            const duration = distance / speed; // dynamic duration
+
+            gsap.to(track, {
                 xPercent: -50,
-                duration: speed,
+                duration: 30,
                 ease: "linear",
                 repeat: -1,
-                force3D: true // 🔥 GPU acceleration
+                force3D: true
             });
-
         });
-
 
     </script>
 
