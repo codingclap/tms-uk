@@ -1330,4 +1330,84 @@
   object-fit: cover;
 }
 
+.footer .footer-form {
+  background: rgba(109, 39, 50, 0.5);
+  border-radius: 5px;
+}
+
+.footer input[type="text"],
+input[type="number"],
+input[type="email"] {
+  width: 100%;
+  font-family: 'Gotham-Book', sans-serif;
+  background: #ffffff00;
+  color: #fff;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+
+.footer .field-one {
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  border-bottom: 0px solid #fff;
+}
+
+.footer .field-two {
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  border-bottom: 0px solid #fff;
+}
+
+.footer .field-three {
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  border-bottom: 0px solid #fff;
+}
+
+.footer .field-four {
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.footer .field-btn {
+  border-radius: 30px;
+  color: #fff;
+  font-size: 15px;
+  font-family: 'Gotham-Bold', sans-serif;
+}
+
+.footer input::placeholder {
+  color: #fff;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+
+.footer input::placeholder {
+  letter-spacing: 0.5px;
+  font-family: 'Gotham-Book', sans-serif;
+  color: #fff;
+}
+
+/* modern */
+.footer input::-webkit-input-placeholder {
+  font-family: 'Gotham-Book', sans-serif;
+  color: #fff;
+}
+
+/* Chrome, Safari */
+.footer input:-ms-input-placeholder {
+  color: #fff;
+}
+
+/* IE */
+.footer input::-ms-input-placeholder {
+  color: #fff;
+}
+
+/* Edge */
 /*############### Footer ####################*/
