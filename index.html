@@ -220,9 +220,9 @@
             object-fit: contain;
             display: block;
         }
-        
+
         @media(max-width:767px) {
-            .marquee-text { 
+            .marquee-text {
                 width: 120px;
             }
         }
@@ -959,36 +959,29 @@
 
         /*************** Custom GSAP Animation for Header Image and Logo ****************/
         gsap.registerPlugin(ScrollTrigger);
+
         document.addEventListener("DOMContentLoaded", () => {
             const track = document.querySelector("#logo-marqueeInner");
-            const slider = document.querySelector(".logo-slider");
 
-            if (!track || !slider) return;
+            if (!track) return;
 
-            // 🔁 Clone items (same as before)
-            const originalItems = Array.from(track.children);
-            let trackWidth = track.scrollWidth;
-            const sliderWidth = slider.offsetWidth;
-
-            while (trackWidth < sliderWidth * 2) {
-                originalItems.forEach(item => {
-                    track.appendChild(item.cloneNode(true));
-                });
-                trackWidth = track.scrollWidth;
-            }
-
-            // 🎯 FIX: Speed based on pixels per second
-            const speed = 50; // px per second (adjust this)
-
-            const distance = track.scrollWidth / 2; // loop distance
-            const duration = distance / speed; // dynamic duration
-
-            gsap.to(track, {
-                x: -distance,
-                duration: duration,
-                ease: "linear",
-                repeat: -1
+            // 🔁 Clone ONCE only (not loop cloning)
+            const items = Array.from(track.children);
+            items.forEach(item => {
+                track.appendChild(item.cloneNode(true));
             });
+
+            // 🎯 Use xPercent instead of pixel distance (SMOOTHER)
+            const speed = 20; // lower = slower
+
+            const tween = gsap.to(track, {
+                xPercent: -50,
+                duration: speed,
+                ease: "linear",
+                repeat: -1,
+                force3D: true // 🔥 GPU acceleration
+            });
+
         });
 
 
