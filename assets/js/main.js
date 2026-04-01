@@ -1,3 +1,42 @@
+ // Infinite Logo Scroll (Horizontal)
+
+        document.addEventListener("DOMContentLoaded", () => {
+
+            const track = document.getElementById('logo-marqueeInner');
+
+            if (!track) return; // safety check
+
+            let x = 0;
+            const speed = 0.7;
+
+            // Clone logos for seamless loop
+            const children = [...track.children];
+            children.forEach(child => {
+                track.appendChild(child.cloneNode(true));
+            });
+
+            function animate() {
+                const halfWidth = track.scrollWidth / 2;
+
+                x -= speed;
+
+                if (Math.abs(x) >= halfWidth) {
+                    x = 0;
+                }
+
+                track.style.transform = `translateX(${x}px)`;
+
+                requestAnimationFrame(animate);
+            }
+
+            animate();
+
+        });
+ // Infinite Logo Scroll (Horizontal)
+
+
+
+ 
 // Home page Infinite Scroll
 
 const tracks = [

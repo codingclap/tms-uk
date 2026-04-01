@@ -28,6 +28,7 @@ body {
    src: url('../fonts/gotham/Gotham-Book.otf') format('woff2');
    font-weight: normal;
    font-style: normal;
+   font-display:swap;
 }
 
 @font-face {
@@ -35,6 +36,7 @@ body {
    src: url('../fonts/gotham/GOTHAM-BOLD.TTF') format('woff2');
    font-weight: normal;
    font-style: normal;
+   font-display:swap;
 }
 
 @font-face {
@@ -42,6 +44,7 @@ body {
    src: url('../fonts/gotham/Gotham-Medium.otf') format('woff2');
    font-weight: normal;
    font-style: normal;
+   font-display:swap;
 }
 
 @font-face {
@@ -49,6 +52,7 @@ body {
    src: url('../fonts/playfair-display/PlayfairDisplay-Regular.ttf') format('woff2');
    font-weight: normal;
    font-style: normal;
+   font-display:swap;
 }
 
 @font-face {
@@ -56,6 +60,7 @@ body {
    src: url('../fonts/playfair-display/PlayfairDisplay-Italic.ttf') format('woff2');
    font-weight: normal;
    font-style: normal;
+   font-display:swap;
 }
 
 @font-face {
@@ -63,6 +68,7 @@ body {
    src: url('../fonts/playfair-display/PlayfairDisplay-BoldItalic.ttf') format('woff2');
    font-weight: normal;
    font-style: normal;
+   font-display:swap;
 }
 
 @font-face {
@@ -70,6 +76,7 @@ body {
    src: url('../fonts/playfair-display/PlayfairDisplay-Bold.ttf') format('woff2');
    font-weight: normal;
    font-style: normal;
+   font-display:swap;
 }
 
 @font-face {
@@ -77,6 +84,7 @@ body {
    src: url('../fonts/montserrat/Montserrat-Regular.ttf') format('woff2');
    font-weight: normal;
    font-style: normal;
+   font-display:swap;
 }
 
 @font-face {
@@ -84,6 +92,7 @@ body {
    src: url('../fonts/montserrat/Montserrat-Medium.ttf') format('woff2');
    font-weight: normal;
    font-style: normal;
+   font-display:swap;
 }
 
 @font-face {
@@ -91,6 +100,7 @@ body {
    src: url('../fonts/montserrat/Montserrat-SemiBold.ttf') format('woff2');
    font-weight: normal;
    font-style: normal;
+   font-display:swap;
 }
 
 @font-face {
@@ -98,6 +108,7 @@ body {
    src: url('../fonts/montserrat/Montserrat-Bold.ttf') format('woff2');
    font-weight: normal;
    font-style: normal;
+   font-display:swap;
 }
 
 @font-face {
@@ -105,12 +116,14 @@ body {
    src: url('../fonts/montserrat/Montserrat-ExtraBold.ttf') format('woff2');
    font-weight: normal;
    font-style: normal;
+   font-display:swap;
 }
 
 @font-face {
    font-family: 'brunson';
    src: url('../fonts/brunson/brunson.ttf') format('woff2');
    font-weight: normal;
+   font-display:swap;
    font-style: normal;
 }
 
@@ -1569,7 +1582,7 @@ body {
 }
 
 /* ─────────────────────────────────────────
-   TRANSLATE Y
+   ROTATE and SCALE - X
 ───────────────────────────────────────── */
 .rotate-0 {
    transform: rotate(0deg);
@@ -1578,7 +1591,18 @@ body {
    transform: rotate(45deg);
 }
 
-
+.scale-0 {
+   transform: rotate(0deg);
+}
+.hover\:scale-1:hover {
+   transform: scale(1);
+}
+.group:hover .group-hover\:scale-1 {
+   transform: scale(1);
+}
+/* ─────────────────────────────────────────
+   TRANSLATE Y
+───────────────────────────────────────── */
 .translate-y-0 {
    transform: translateY(0rem);
 }
@@ -1603,25 +1627,6 @@ body {
    transform: translateY(1.25rem);
 }
 
-.translate-y-6 {
-   transform: translateY(1.5rem);
-}
-
-.translate-y-7 {
-   transform: translateY(1.75rem);
-}
-
-.translate-y-8 {
-   transform: translateY(2rem);
-}
-
-.translate-y-9 {
-   transform: translateY(2.25rem);
-}
-
-.translate-y-10 {
-   transform: translateY(2.5rem);
-}
 
 .hover\:translate-y-0:hover {
    transform: translateY(0rem);
@@ -1645,26 +1650,6 @@ body {
 
 .hover\:translate-y-5:hover {
    transform: translateY(1.25rem);
-}
-
-.hover\:translate-y-6:hover {
-   transform: translateY(1.5rem);
-}
-
-.hover\:translate-y-7:hover {
-   transform: translateY(1.75rem);
-}
-
-.hover\:translate-y-8:hover {
-   transform: translateY(2rem);
-}
-
-.hover\:translate-y-9:hover {
-   transform: translateY(2.25rem);
-}
-
-.hover\:translate-y-10:hover {
-   transform: translateY(2.5rem);
 }
 
 .group:hover .group-hover\:translate-y-0 {
@@ -1691,27 +1676,7 @@ body {
    transform: translateY(1.25rem);
 }
 
-.group:hover .group-hover\:translate-y-6 {
-   transform: translateY(1.5rem);
-}
 
-.group:hover .group-hover\:translate-y-7 {
-   transform: translateY(1.75rem);
-}
-
-.group:hover .group-hover\:translate-y-8 {
-   transform: translateY(2rem);
-}
-
-.group:hover .group-hover\:translate-y-9 {
-   transform: translateY(2.25rem);
-}
-
-.group:hover .group-hover\:translate-y-10 {
-   transform: translateY(2.5rem);
-}
-
- 
 /* ─────────────────────────────────────────
    TRANSLATE X
 ───────────────────────────────────────── */
@@ -2181,26 +2146,7 @@ body {
 .duration-500 {
    transition-duration: 500ms;
 }
-
-.duration-600 {
-   transition-duration: 600ms;
-}
-
-.duration-700 {
-   transition-duration: 700ms;
-}
-
-.duration-800 {
-   transition-duration: 800ms;
-}
-
-.duration-900 {
-   transition-duration: 900ms;
-}
-
-.duration-1000 {
-   transition-duration: 1000ms;
-}
+ 
 
 /* ═══════════════════════════════════════════
    BG COLOR + BG OPACITY COMBINED

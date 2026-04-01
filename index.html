@@ -4,13 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind Mega Menu</title>
+    <title>TMS UK</title>
     <link rel="stylesheet" href="assets/css/flowbite.min.css" />
     <link rel="stylesheet" href="assets/css/universal.css" />
     <link rel="stylesheet" href="assets/css/home.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
+    <style>
+        .split-char,
+        .split-word {
+            opacity: 0;
+            /* prevent flash before JS */
+        }
+
+        .split-char .char,
+        .split-word .word {
+            display: inline-block;
+            will-change: transform, opacity;
+            transform: translateZ(0);
+        }
+    </style>
     <!-- ═══════════════════════════════ Header Section ═══════════════════════════════════════════ -->
     <!-- <header class="fixed w-full py-6 px-4 left-0 right-0 bg-maroon bg-opacity-100 z-20 text-white">
         <div class="container flex items-center justify-between mx-auto w-full">
@@ -84,14 +99,15 @@
             class="flex w-full md:w-full lg:w-50 xl:w-50  justify-end items-center ps-5 sm:ps-5 lg:ps-10 pe-5 sm:pe-5 lg:pe-1 py-16 md:py-0">
 
             <div class="flex flex-col w-full lg:w-85 xl:w-80 ">
-                <h1
-                    class="font-Playfair-Bold leading-tight mb-5 font-bold text-40 sm:text-48 md:text-52 lg:text-64 xl:text-72 2xl:text-84">
+                <h1 data-aos="fade-up" data-aos-duration="2000"
+                    class="split-char font-Playfair-Bold leading-tight mb-5 font-bold text-40 sm:text-48 md:text-52 lg:text-64 xl:text-72 2xl:text-84">
                     Grow Faster <br class="hidden lg:block" /> With <span
                         class="font-Playfair-BoldItalic text-46 sm:text-56 md:text-56 lg:text-64 xl:text-80 2xl:text-80 text-maroon">Design</span>
                     <br class="hidden lg:block" />That Converts
                 </h1>
 
-                <p class="text-md leading-relaxed mb-10 font-gotham-book text-justify">
+                <p data-aos="fade-up" data-aos-duration="2000"
+                    class="split-word text-md leading-relaxed mb-10 font-gotham-book text-justify">
                     At TMS, we are the architects of brand journeys, blending vision with
                     strategy to craft narratives that resonate. Every project begins with a
                     spark of inspiration, nurtured by collaboration and refined by bold,
@@ -99,7 +115,7 @@
                     to move, connect, and inspire.
                 </p>
 
-                <div class="buttonStyle-One text-left lg:text-right mt-5">
+                <div class="buttonStyle-One text-left lg:text-right mt-5" data-aos="fade-down" data-aos-duration="2000">
                     <a href="#"
                         class="primary-btn relative group ease-in-out duration-200 py-2 bg-white group-hover:bg uppercase transition-all font-Montserrat-ExtraBold">
                         Get In Touch
@@ -115,7 +131,7 @@
         <div class="flex w-full md:w-full lg:w-45 xl:w-45  items-center justify-end gap-5
                  pr-0 pl-2 md:pl-2 lg:pl-3 py-10 md:py-0 md:min-h-screen">
 
-            <div class="scroll-box ease-in-out">
+            <div class="scroll-box ease-in-out" data-aos="fade-up" data-aos-duration="2000">
                 <div class="track ease-in-out" id="col1">
                     <div class="card h-l"><img src="assets/images/home/work-1.webp" alt="" /></div>
                     <div class="card h-s"><img src="assets/images/home/work-2.webp" alt="" /></div>
@@ -128,7 +144,7 @@
             </div>
 
 
-            <div class="scroll-box ease-in-out">
+            <div class="scroll-box ease-in-out" data-aos="fade-down" data-aos-duration="2000">
                 <div class="track ease-in-out" id="col2">
                     <div class="card h-m"><img src="assets/images/home/work-4.webp" alt="" /></div>
                     <div class="card h-l"><img src="assets/images/home/work-5.webp" alt="" /></div>
@@ -155,18 +171,20 @@
             class="flex w-full md:w-full lg:w-50 xl:w-50 justify-end items-center ps-5 sm:ps-5 lg:ps-10 pe-5 sm:pe-5 lg:pe-6 py-16 md:py-0">
 
             <div class="flex flex-col w-full lg:w-85 xl:w-80 z-10">
-                <p class="font-gotham-Medium text-white-10">WE’RE WITH YOU EVERY STEP OF YOUR</p>
-                <h1
-                    class="font-Playfair-Regular leading-tight tracking-widest text-white-20 uppercase mb-5 text-40 sm:text-48 md:text-51 lg:text-56 xl:text-72 2xl:text-88">
+                <p class="split-word font-gotham-Medium text-white-10" data-aos="fade-up" data-aos-duration="2000">WE’RE
+                    WITH YOU EVERY STEP OF YOUR</p>
+                <h1 data-aos="fade-up" data-aos-duration="2000"
+                    class="split-char font-Playfair-Regular leading-tight tracking-widest text-white-20 uppercase mb-5 text-40 sm:text-48 md:text-51 lg:text-56 xl:text-72 2xl:text-88">
                     Creative <br class="hidden lg:block" /> journey
                 </h1>
 
-                <p class="text-md leading-relaxed mt-2 mb-10 font-gotham-book text-white-10 text-justify">
+                <p class="split-word text-md leading-relaxed mt-2 mb-10 font-gotham-book text-white-10 text-justify"
+                    data-aos="fade-up" data-aos-duration="2000">
                     To craft stories that resonate, to design with intention, and to connect brands to people through
                     moments of inspiration and creativity. We blend art with strategy, turning vision into impact.
                 </p>
 
-                <div class="buttonStyle-Two text-left mt-5">
+                <div class="buttonStyle-Two text-left mt-5" data-aos="fade-down" data-aos-duration="2000">
                     <a href="#"
                         class="primary-btn relative group px-8 ease-in-out duration-200 tracking-wider py-3 text-xl transition-all font-gotham-book">
                         View Work
@@ -181,9 +199,9 @@
 
 
         <div class="flex w-full lg:w-45 relative min-h-[800px] lg:min-h-screen md:w-full items-end justify-end gap-5
-                pl-0 lg:pl-3 pr-0 sm:px-10 lg:px-16 py-10 md:py-0">
+                pl-0 lg:pl-3 pr-0 sm:px-10 lg:px-16 py-10 md:py-0" data-aos="fade-down" data-aos-duration="2000">
 
-            <div class="tms-journey flex  w-full justify-center md:justify-start xl:justify-start items-end">
+            <div class="tms-journey flex w-full justify-center md:justify-start xl:justify-start items-end" >
                 <img src="assets/images/home/plain-paper.webp" alt="tms-paper" class="absolute z-0 tms-paper">
                 <img src="assets/images/home/bulb.webp" class="absolute tms-bulb z-10" alt="" />
                 <img src="assets/images/home/project.webp" class="absolute tms-project z-10" alt="" />
@@ -205,12 +223,24 @@
 
     <!-- ═══════════════════════════════ Section - Three ═══════════════════════════════════════════ -->
     <style>
+        .logo-slider {
+            overflow: hidden;
+            width: 100%;
+        }
+
         .marquee-inner {
             display: flex;
-            flex-wrap: nowrap;
-            white-space: nowrap;
+            align-items: center;
             width: max-content;
+            /* IMPORTANT */
             will-change: transform;
+        }
+
+        .marquee-inner img {
+            margin-right: 45px;
+            height: 110px;
+            flex-shrink: 0;
+            /* prevents squishing */
         }
 
         .marquee-text {
@@ -221,7 +251,26 @@
             display: block;
         }
 
+        #logo-marqueeInner {
+            display: flex;
+            width: max-content;
+            gap: 20px;
+            /* use gap instead of margins */
+            will-change: transform;
+        }
+
         @media(max-width:767px) {
+            #logo-marqueeInner { 
+                gap: 0px;
+            }
+
+            .marquee-inner img {
+                margin-right: 20px;
+                height: 110px;
+                flex-shrink: 0;
+                /* prevents squishing */
+            }
+
             .marquee-text {
                 width: 120px;
             }
@@ -229,12 +278,14 @@
     </style>
     <section class="section-3 mx-1920 bg-brown bg-opacity-100 pt-20 pb-20 overflow-hidden">
         <div class="flex flex-col items-center justify-center text-center w-full pb-10 px-5 sm:px-9 lg:px-14">
-            <h3 class="font-gotham-Bold text-white text-20 lg:text-24 xl:text-28">Trusted by 800+ in-house marketing
+            <h3 data-aos="fade-up" data-aos-duration="2000"
+                class="split-word font-gotham-Bold text-white text-20 lg:text-24 xl:text-28">Trusted by 800+ in-house
+                marketing
                 teams and global brands
             </h3>
 
         </div>
-        <div class="logo-slider">
+        <div class="logo-slider" data-aos="fade-up" data-aos-duration="2000">
             <div class="marquee-inner sm:gap-0 md:gap-10 lg:gap-10 xl:gap-14" id="logo-marqueeInner">
                 <img class="marquee-text" src="assets/images/home/brand/emaar.png" alt="">
                 <img class="marquee-text" src="assets/images/home/brand/adcb.png" alt="">
@@ -246,7 +297,7 @@
             </div>
         </div>
     </section>
-
+    
     <!-- ═══════════════════════════════ Section - Three ═══════════════════════════════════════════ -->
 
 
@@ -703,12 +754,13 @@
                     business growth.</span> </h2>
         </div>
 
-        <div class="flex flex-col md:flex-row items-center justify-center gap-6 sm:gap-10 lg:gap-20 pt-8">
+        <div class="flex flex-col md:flex-row items-center justify-center gap-6 sm:gap-10 lg:gap-20 pt-8"
+            id="CounterTrigger">
             <div class="flex items-center justify-center w-full md:w-full lg:w-30 xl:w-25">
                 <div class="flex flex-col items-center">
                     <div
                         class="success-measured flex flex-row font-brunson text-90 sm:text-100 md:text-120 lg:text-150 xl:text-180">
-                        <span>50</span>+
+                        <span id="counter1">50</span>+
                     </div>
                     <span class="font-gotham-Medium pt-6 text-brown text-18 lg:text-20 xl:text-24">Projects
                         Completed</span>
@@ -718,7 +770,7 @@
                 <div class="flex flex-col items-center">
                     <div
                         class="success-measured flex flex-row font-brunson text-90 sm:text-100 md:text-120 lg:text-150 xl:text-180">
-                        <span>5</span>+
+                        <span id="counter2">5</span>+
                     </div>
                     <span class="font-gotham-Medium pt-6 text-brown text-18 lg:text-20 xl:text-24">Years of
                         Experience</span>
@@ -728,7 +780,7 @@
                 <div class="flex flex-col items-center">
                     <div
                         class="success-measured flex flex-row font-brunson text-90 sm:text-100 md:text-120 lg:text-150 xl:text-180">
-                        <span>100</span>+
+                        <span id="counter3">100</span>+
                     </div>
                     <span class="font-gotham-Medium pt-6 text-brown text-18 lg:text-20 xl:text-24">Happy
                         Customers</span>
@@ -955,45 +1007,70 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/gsap.min.js"></script>
     <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/home-gsap.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/SplitText.min.js"></script>
     <script>
+        gsap.registerPlugin(SplitText, ScrollTrigger);
 
-        /*************** Custom GSAP Animation for Header Image and Logo ****************/
-        gsap.registerPlugin(ScrollTrigger);
-        document.addEventListener("DOMContentLoaded", () => {
-            const track = document.querySelector("#logo-marqueeInner");
-            const slider = document.querySelector(".logo-slider");
+        // ---------- CHAR ANIMATION ----------
+        document.querySelectorAll(".split-char").forEach((el) => {
 
-            if (!track || !slider) return;
+            // hide before split (prevents jump)
+            gsap.set(el, { opacity: 0 });
 
-            // 🔁 Clone items (same as before)
-            const originalItems = Array.from(track.children);
-            let trackWidth = track.scrollWidth;
-            const sliderWidth = slider.offsetWidth;
+            let split = SplitText.create(el, { type: "chars" });
 
-            while (trackWidth < sliderWidth * 2) {
-                originalItems.forEach(item => {
-                    track.appendChild(item.cloneNode(true));
-                });
-                trackWidth = track.scrollWidth;
-            }
-
-            // 🎯 FIX: Speed based on pixels per second
-            const speed = 50; // px per second (adjust this)
-
-            const distance = track.scrollWidth / 2; // loop distance
-            const duration = distance / speed; // dynamic duration
-
-            gsap.to(track, {
-                xPercent: -50,
-                duration: 30,
-                ease: "linear",
-                repeat: -1,
-                force3D: true
+            gsap.from(split.chars, {
+                yPercent: 120,        // smoother than px
+                opacity: 0,
+                duration: 1,
+                ease: "expo.out",
+                stagger: { each: 0.04 },
+                force3D: true,
+                onStart: () => gsap.set(el, { opacity: 1 }), // reveal safely
+                scrollTrigger: {
+                    trigger: el,
+                    start: "top 85%",
+                    toggleActions: "play none none none"
+                }
             });
+
         });
 
-    </script>
 
+        // ---------- WORD ANIMATION ----------
+        document.querySelectorAll(".split-word").forEach((el) => {
+
+            gsap.set(el, { opacity: 0 });
+
+            let split = SplitText.create(el, { type: "words" });
+
+            gsap.from(split.words, {
+                yPercent: 120,
+                opacity: 0,
+                duration: 1,
+                ease: "expo.out",
+                stagger: { each: 0.02 }, // slower = smoother
+                force3D: true,
+                onStart: () => gsap.set(el, { opacity: 1 }),
+                scrollTrigger: {
+                    trigger: el,
+                    start: "top 85%",
+                    toggleActions: "play none none none"
+                }
+            });
+
+        });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,      
+            duration: 1000, // smooth animation
+            easing: "ease-out-cubic"
+        });
+    </script>
 </body>
 
 </html>
